@@ -3,14 +3,14 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 .bg-red {
-    background-color: rgb(207,46,46);
+    background-color: rgb(163,30,30);
+    border: 1px solid rgb(163,30,30)
 }
 .text-red{
-    color: rgb(207,46,46);
+    color: rgb(163,30,30);
 }
 .text-elite {
     font-family: 'Special Elite', cursive;
-    font-size: 24px;
 }
 .footer-bar {
     height: 60px;
@@ -21,6 +21,8 @@ body {
 }
 .bold-title {
     margin-top: 4px;
-    padding: 8px 12px;
+    padding: 8px 2px;
     color:rgb(42, 44, 42);
+    font-weight: bold;
 }
+
