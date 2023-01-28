@@ -16,6 +16,7 @@ body {
   .text-elite {
       font-family: 'Special Elite', cursive;
       font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
   }
   .text-logo {
       font-family: 'Poppins', sans-serif;
@@ -24,7 +25,7 @@ body {
   .text-main {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1.25px;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   
