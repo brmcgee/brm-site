@@ -26,3 +26,12 @@ body {
     font-weight: bold;
 }
 
+.zoom {
+    zoom: .25;
+}
+
+.bd-0 {
+    border: 0px;
+}
+
+

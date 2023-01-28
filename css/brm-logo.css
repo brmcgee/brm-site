@@ -1,10 +1,16 @@
 
   /* brm logo styling   */
+  .brm-cont-logo:hover {
+    -webkit-filter: opacity(54%) saturate(88%);
+    filter: opacity(54%) saturate(76%); 
+  }
+
     .brm-cont-logo {
+      transition: filter -webkit-filter ease;
         background-position: center;
         background-repeat: no-repeat;
-        zoom: .5;
-        height: 340px;
+        zoom: .35;
+        height: 320px;
         -webkit-filter: opacity(50%) saturate(84%);
         filter: opacity(50%) saturate(74%);
         margin-top: 10px;
