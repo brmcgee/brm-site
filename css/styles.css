@@ -6,6 +6,7 @@ body {
     font-size: 18px;
   }
   
+  
   .bg-red {
       background-color: rgb(163,30,30);
       border: 1px solid rgb(163,30,30)
@@ -29,13 +30,25 @@ body {
   }
   
   
+  
   .footer-bar {
-      height: 60px;
+      height: 50px;
       background-color: #333;
       position: fixed;
+      z-index: 999999;
       bottom: 0px;
       width: 100%;
   }
+  .footer-bar p {
+      font-size: 20px;
+      font-family: 'Special Elite', cursive;
+      opacity: 100%;
+      transition: opacity 12s;
+  }
+  .footer-bar p:hover {
+      opacity: 40%;
+  }
+  
   .bold-title {
       margin-top: 4px;
       padding: 8px 2px;
@@ -59,14 +72,10 @@ body {
       opacity: 50%;
   }
   
-  .footer-bar p {
-      font-size: 20px;
-      font-family: 'Special Elite', cursive;
-      opacity: 100%;
-      transition: opacity 12s;
+  .li-none {
+      list-style: none;
   }
-  .footer-bar p:hover {
-      opacity: 40%;
-  }
+  
+  
   
   
