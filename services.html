@@ -28,31 +28,41 @@
   <link rel="stylesheet" href="css/masthead.css">
 
   <!-- Local JS scripts -->
-  <script src="js/app.js"></script>
+  <script src="js/apps.js"></script>
 
 </head>
 
 <body>
 
+
 <!-- ============= BANNER ============== -->  
-<div class="block">
-  <div>
-    <a class="btn" href="https://www.facebook.com/profile.php?id=100054525456256">
-      <img src="assets/logo/facebook.jfif" alt="" style="height:32px;padding:0;">
-    </a>
+<div class="logo" id="logo">
+
+  <div class="block">
+    <div>
+      <a class="btn" href="https://www.facebook.com/profile.php?id=100054525456256">
+        <img src="assets/logo/facebook.jfif" alt="BRM @ Facebook">
+      </a>
+    </div>
+    <div>
+      <a class="btn btn-outline-warning btn-sm mt-2" href="contacts.html">Connect</a>
+    </div>
+    
   </div>
-  <div>
-    <a class="btn btn-outline-warning btn-sm mt-2" href="contacts.html">Connect</a>
+  <div class="brm-cont-logo">
+    <!-- <b class="text-elite bold-title fs-3 text-red">BRM Contractors</b>
+    <b class="text-elite bold-title fs-3 text-red me-3 float-end">724.787.3758</b> -->
   </div>
-  
+
 </div>
-<div class="brm-cont-logo">
-  <!-- <b class="text-elite bold-title fs-3 text-red">BRM Contractors</b>
-  <b class="text-elite bold-title fs-3 text-red me-3 float-end">724.787.3758</b> -->
-</div>
+
 <!-- ============= BANNER END// ============== -->
 
-  <!-- ============= NAVBAR ============== -->
+
+
+<!-- ============= NAVBAR ============== -->
+
+<div class="nav-bar" id="navBar">
   <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-red py-1">
     <div class="container">
       <a class="navbar-brand text-elite py-0 " href="index.html">
@@ -83,14 +93,21 @@
   
       </div> <!-- navbar-collapse.// -->
     </div> <!-- container-fluid.// -->
-    </nav>
-    <!-- ============= NAVBAR END// ============== -->
+  </nav>
+</div>
+
+<!-- ============= NAVBAR END// ============== -->
+
+
+<!-- ============= WRAPPER ==================== --> 
+
+<div class="wrapper">
 
 
 
   <!-- ============= CONTENT ==================== --> 
 
-  <main style="padding-bottom: 100px;">
+<main style="padding-bottom: 100px;">
 
 
   <div class="container px-4 py-5" id="icon-grid">
@@ -179,7 +196,7 @@
 
 
 
-    <!-- ============= MASTHEAD++++ ============== -->
+<!-- ============= MASTHEAD++++ ============== -->
 
     <header class="masthead">
       <div class="container px-4 px-lg-5 h-100">
@@ -200,15 +217,18 @@
   <div class="block-red">
   </div>
   
-  <!-- ============= MASTHEAD END// ============== -->
+<!-- ============= MASTHEAD END// ============== -->
 
+</div>
+
+<!-- ============ WRAPPER END// =============== --> 
   
   
-  <!-- ============= FOOTER ============== --> 
+<!-- ============= FOOTER ============== --> 
   <footer class="footer-bar">
     <p class="h4 text-warning text-center mt-1">BRM Contractors Inc - 724-787-3758</p>
   </footer>
-  <!-- ============= FOOTER END// ============== -->
+<!-- ============= FOOTER END// ============== -->
 
 
 
