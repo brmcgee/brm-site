@@ -9,9 +9,27 @@ header.masthead {
   height: 100vh;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
-
+@media (max-width: 552px) {
+  header.masthead {
+    height: 40vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
 
 @media (min-width: 992px) {
   header.masthead {
@@ -21,7 +39,7 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -76,6 +94,6 @@ header.masthead h1, header.masthead .h1 {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1px;
 }
