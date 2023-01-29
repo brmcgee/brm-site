@@ -6,14 +6,16 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 55vh;
+  height: 80vh;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
+
+
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    height: 40vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
