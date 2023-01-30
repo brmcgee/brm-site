@@ -9,6 +9,7 @@
   <meta name="keywords" content="home repair construciton deck bathroom kitchen drywall paint roofing roof siding fences" />
   <meta name="description" content="BRM - Total Servcie home repair, remodeling and contruction" />  
   <title>BRM Contractors Inc</title>
+  
   <link rel="icon" href="assets/logo/brm-ico.png" sizes="32x32" />
 
   <!-- Latest compiled and minified CSS -->
@@ -16,12 +17,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 
   <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <!-- font awesome -->
+  <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
+  <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous">  -->
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,64 +35,78 @@
   <link rel="stylesheet" href="css/masthead.css">
 
   <!-- Local JS scripts -->
-  <script src="js/app.js"></script>
+  <script src="js/apps.js"></script>
+
 </head>
 
 <body>
-  <!-- ============= BANNER ============== -->  
-  <div class="block">
-    <div>
-      <a class="btn" href="https://www.facebook.com/profile.php?id=100054525456256">
-        <img src="assets/logo/facebook.jfif" alt="" style="height:32px;padding:0;">
-      </a>
+  <!-- ============= BANNER ==================== -->  
+
+  <div class="logo" id="logo">
+    <div class="block">
+      <div>
+        <a class="btn" href="https://www.facebook.com/profile.php?id=100054525456256">
+          <img src="assets/logo/facebook.jfif" alt="BRM @ Facebook">
+        </a>
+      </div>
+      <div>
+        <a class="btn btn-outline-warning btn-sm mt-2" href="contacts.html">Connect</a>
+      </div>
+      
     </div>
-    <div>
-      <a class="btn btn-outline-warning btn-sm mt-2" href="contacts.html">Connect</a>
+    <div class="brm-cont-logo">
+      <!-- <b class="text-elite bold-title fs-3 text-red">BRM Contractors</b>
+      <b class="text-elite bold-title fs-3 text-red me-3 float-end">724.787.3758</b> -->
     </div>
-    
   </div>
-  <div class="brm-cont-logo">
-    <!-- <b class="text-elite bold-title fs-3 text-red">BRM Contractors</b>
-    <b class="text-elite bold-title fs-3 text-red me-3 float-end">724.787.3758</b> -->
-  </div>
+
   <!-- ============= BANNER END// ============== -->
 
-  <!-- ============= NAVBAR ============== -->
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-red py-1">
-  <div class="container">
-    <a class="navbar-brand text-elite py-0 " href="index.html">
-      <i class="fa-solid fa-house h3 mt-2"></i>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main_nav">
-    
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="services.html"> Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-      <li class="nav-item"><a class="nav-link" href="contacts.html"> Contact</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> More Services </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="#"> Custom Decks </a></li>
-                <li><a class="dropdown-item" href="#"> Bathroom Remodel </a></li>
-                <li><a class="dropdown-item" href="#"> Kitchen Remodel </a></li>
-                <li><a class="dropdown-item" href="#"> Roofing </a></li>
-                <li><a class="dropdown-item" href="#"> Siding </a></li>
-                <li><a class="dropdown-item" href="#"> Handyman and Repair </a></li>
-          </ul>
-      </li>
-    </ul>
+  <!-- ============= NAVBAR ==================== -->
+  
+  <div class="nav-bar" id="navBar">
 
-    </div> <!-- navbar-collapse.// -->
-  </div> <!-- container-fluid.// -->
-  </nav>
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-red py-1">
+      <div class="container">
+        <a class="navbar-brand text-elite py-0 " href="index.html">
+          <i class="fa-solid fa-house h3 mt-2"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="services.html"> Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html"> Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> More Services </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="#"> Custom Decks </a></li>
+                    <li><a class="dropdown-item" href="#"> Bathroom Remodel </a></li>
+                    <li><a class="dropdown-item" href="#"> Kitchen Remodel </a></li>
+                    <li><a class="dropdown-item" href="#"> Roofing </a></li>
+                    <li><a class="dropdown-item" href="#"> Siding </a></li>
+                    <li><a class="dropdown-item" href="#"> Handyman and Repair </a></li>
+              </ul>
+          </li>
+        </ul>
+    
+        </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+      </nav>
+
+  </div>
+
   <!-- ============= NAVBAR END// ============== -->
 
 
-  <!-- ============= MASTHEAD++++ ============== -->
+  <!-- =============== WRAPPER ================ -->
+  <div class="wrapper">
+
+    <!-- ============= MASTHEAD++++ ============== -->
 
   <header class="masthead">
     <div class="container px-4 px-lg-5 h-100">
@@ -228,8 +243,11 @@
     </main>
 <!-- ============= CONTENT END// ============== -->
 
+  </div>
+  <!-- =============== WRAPPER END//============ -->
   
-<!-- ============= FOOTER ============== --> 
+<!-- ============= FOOTER ===================== --> 
+
 <footer class="footer-bar">
   <p class="h4 text-warning text-center mt-1">BRM Contractors Inc - 724-787-3758</p>
 </footer>
