@@ -16,6 +16,10 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
   
   <!-- Local CSS styles  -->
   <link rel="stylesheet" href="css/styles.css">
@@ -47,20 +51,18 @@
 </div>
 <!-- ============= BANNER END// ============== -->
 
-  <!-- ============= NAVBAR ============== -->
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-red py-1">
-    <div class="container">
-      <a class="navbar-brand text-elite py-0" href="index.html"><span class="material-symbols-outlined" style="font-size: 30px;">
-            home
-            </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="main_nav">
+ <!-- ============= NAVBAR ============== -->
+ <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-red py-1">
+  <div class="container">
+    <a class="navbar-brand text-elite py-0 " href="index.html">
+      <i class="fa-solid fa-house h3 mt-2"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
     
-
     <ul class="navbar-nav ms-auto">
       <li class="nav-item"><a class="nav-link" href="services.html"> Services</a></li>
       <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
@@ -68,14 +70,12 @@
       <li class="nav-item dropdown">
         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> More Services </a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="#"> Drywall  and Finishing</a></li>
-                <li><a class="dropdown-item" href="#"> Custom Decks </a></li>
+            <li><a class="dropdown-item" href="#"> Custom Decks </a></li>
                 <li><a class="dropdown-item" href="#"> Bathroom Remodel </a></li>
                 <li><a class="dropdown-item" href="#"> Kitchen Remodel </a></li>
                 <li><a class="dropdown-item" href="#"> Roofing </a></li>
                 <li><a class="dropdown-item" href="#"> Siding </a></li>
                 <li><a class="dropdown-item" href="#"> Handyman and Repair </a></li>
-                <li><a class="dropdown-item" href="two.html"> Design 2 </a></li>
           </ul>
       </li>
     </ul>
@@ -88,39 +88,28 @@
 
   <!-- ============= CONTENT ============== --> 
 
-
-  <div class="b-example-divider"></div>
   
-  <!-- <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-6 col-sm-8 col-lg-6">
-        <img src="assets/gallery/bathroom1.jpg" class="d-block mx-lg-auto img-fluid" alt="BRM does bathrooms" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <div>
-          <h1 class="display-5 fw-bold lh-1 mb-3 text-elite">We specialize in all sorts of repair and we even remodel bathrooms</h1>
+  <hr class="divider bg-dark" />
+  
+  <main style="padding-bottom: 100px;"> 
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white text-elite">About BRM </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">A family owned and operated company servicing the Western PA area.</p>
         </div>
-        <p class="lead">We repair all things bathroom! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full bathroom remodel. </p>
       </div>
-    </div>
-  </div> -->
-
-  <div class="b-example-divider"></div>
-
-  <div class="container col-xxl-6 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-6 col-sm-6 col-lg-6">
-        <img src="assets/gallery/custom-deck.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="BRM does bathrooms" width="700" height="500" loading="lazy">
-      </div>
+  </div>
+  
+  <div class="container-sm">
+    <div class="row">
       <div class="col-lg-6">
-
-        <div class="col-lg-6">
+        <div class="col-lg-8">
           <div class="py-4">
               <!-- mailing address  -->
               <div class="row">
                 <div class="col-12">
-                  <h3 class="text-red h3"><span class="material-symbols-outlined">
-                    mail</span> Mailing Address:
+                  <h3 class="text-red h3"><i class="fa-solid fa-address-card text-dark py-3"></i> Mailing Address:
                   </h3>
                 </div>
                 <div class="row ms-4 py-1 my-0">
@@ -130,8 +119,7 @@
               <!-- phone  -->
               <div class="row">
                 <div class="col-12">
-                  <h3 class="text-red h3"><span class="material-symbols-outlined">
-                    call</span> Phone:
+                  <h3 class="text-red h3"><i class="fa-solid fa-phone text-dark py-3"></i> Phone:
                   </h3>
                 </div>
                 <div class="row ms-4 py-1 my-0">
@@ -141,8 +129,7 @@
               <!-- email  -->
               <div class="row">
                 <div class="col-12">
-                  <h3 class="text-red h3"><span class="material-symbols-outlined">
-                    email</span> Email:
+                  <h3 class="text-red h3"><i class="fa-solid fa-at text-dark py-3"></i> Email:
                   </h3>
                 </div>
                 <div class="row ms-4 py-1 my-0">
@@ -152,33 +139,54 @@
               <!-- payments  -->
               <div class="row">
                 <div class="h3 col-12">
-                  <h3 class="text-red h3"><span class="material-symbols-outlined">
-                    payments</span> Payments:
+                  <h3 class="text-red h3"><i class="fa-solid fa-money-check-dollar text-dark py-3"></i> Payments:
                   </h3>
                 </div>
                 <div class="row">
-                  <div class="col-8">
-                    <div class="row ms-4 my-0 li-none">
+                  <div class="col-6">
+                    <div class="ms-5 my-0 li-none">
                       <li>Cash</li>
-                      <li>Approved Check</li>
+                      <li>Check</li>
                       <li>Credit Card</li>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-6 col-6">
                     <img src="assets/logo/card-logos.JPG" alt="Visa/MasterCard/Discover/AX Logo" class="img-thumbnail border-0 py-1" style="height:100px;width:90px;">
                   </div>  
                 </div>
               </div>
                
           </div>
-      
-      
+    
         </div> 
-      </div>     
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="h-100 p-5 bg-light border rounded-3 text-center">
+          <div>
+            <h2 class="text-elite text-red text-uppercase">We are 100% total service</h2>
+          </div>
+          <p>Chances are if it's broke, we can fix it. Give us a call 
+            today and one of our technicians will arrive and diagnose the problem. 
+            Provide insight and offer a solution. We are at your services. 
+            </p>
+             <div class="text-center">
+              <img src="assets/logo/services.png" class="img-thumbnail" alt="Total Service by BRM" style="width:100px;">
+             </div>
+        </div>
+      </div>
     </div>
+
   </div>
 
-          <!-- ============= MASTHEAD++++ ============== -->
+  <hr class="featurette-divider">
+
+</main>
+
+  <hr class="featurette-divider">
+
+  
+
+<!-- ============= MASTHEAD++++ ============== -->
 
   <header class="masthead">
     <div class="container px-4 px-lg-5 h-100">
@@ -199,7 +207,7 @@
 <div class="block-red">
 </div>
 
-        <!-- ============= MASTHEAD END// ============== -->
+<!-- ============= MASTHEAD END// ============== -->
 
 
 

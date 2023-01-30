@@ -76,6 +76,20 @@ body {
       list-style: none;
   }
   
+  .fa-house{
+      color: rgb(212, 179, 31, .9);
+      transition: color 1s;
+  }
+  .fa-house:hover{
+      
+      color: rgb(53, 50, 50, .9);
+  
+  }
+  .fa-house:active{
+      color: rgba(204, 89, 22, 0.5);
+  }
+  
+  
   
   
   
