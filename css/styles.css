@@ -4,7 +4,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1.05px;
     font-size: 18px;
-    overflow-x: hidden;
+  }
+
+/* overflow-x prevent vertical scroll on wider containers  */
+  @media screen and (max-width: 667px) {
+    body {
+      overflow-x: hidden !important;
+    }
+    .container {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
   }
 
 
