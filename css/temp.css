@@ -21,10 +21,11 @@
   
   
     /* CONTAINER HEIGHT ADJUSTMENTS */
+    --banner-bar-height: 33px;
     --banner-height: 250px;
     --nav-height: 80px;
-    --wrapper-height: 2500px;
-    --footer-height: 50px;
+    --wrapper-height: 1000px;
+    --footer-height: 35px;
 }
 .bg-main {
     background-color: rgba(163, 30, 30, 1);
@@ -43,18 +44,18 @@
     display: inline block;
     font-family: "Roboto", Sans-serif;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 1.5px;
     padding: 10px 18px;
     border-radius: 3px;
-    transition: 0.2s;
-    border: 2px solid var(--bg-primary);
+    border: 3px solid var(--bg-primary);
     color: white;
     text-decoration: none;
+    transition: 0.2s;
 }
 .btn-outline-red:hover {
     background-color: rgba(163, 30, 30, .8);
-    border: 2px solid rgba(163, 30, 30, 1);
+    border: 3px solid rgba(163, 30, 30, 1);
     color: white;
 }
 
@@ -86,7 +87,6 @@
 }
 .wrapper {
     height: var(--wrapper-height);
-    background-color:var(--bg-light);
     margin: 0px;
     padding: 0px;
 }   
@@ -110,17 +110,16 @@
      height: var(--footer-height);
      width: 100%;
      overflow: hidden;
-     z-index: 1000;
+     z-index: 99000;
      /* background-color: #333; */
 }
 
 /* === BANNER STYLE =========  */
-
 .banner-bar {
     background-color: #333;
     box-shadow: 1px 2px 2px 0px gray;
     margin-bottom: 3px;
-    height: 48px;
+    height: var(--banner-bar-height);
     width: 100vw;
     transition: linear height 300ms;
 }
@@ -130,15 +129,10 @@
     #bannerImg2 {
         display: none;
     }
-    .banner-bar{
-        height: 38px;
-        width: 100vw;
-    }
 }
-
-
-
 /* === BANNER END/  =========  */
+
+
 
 /* ======== NAVBAR ============  */
 
@@ -147,8 +141,6 @@
     background-color: white;
     margin: 0px;
     box-shadow: 1px 3px 5px 3px rgba(75, 12, 12, 0.7);
-
-
 }
 .nav-bar .active {
     box-sizing: border-box;
@@ -279,14 +271,29 @@
 }
 /* === NAVBAR STYLE END/ ======  */
 
+
+
 /* ===== MASTHEAD ===============*/
 .masthead {
     box-sizing: border-box;
     width: 100vw;
-    height: 65vh;
+    height: 66vh;
     background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(139, 142, 38, 0.5) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
     background-size: cover;
     position: relative;
+}
+.masthead .masthead-container .block-text {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: 62vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: baseline;
 }
 .masthead::before {
     content: "";
@@ -312,13 +319,12 @@
     text-align: center;
     padding: 0px 15px;
 }
-
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
-    font-size: 38px;
+    font-size: 50px;
     font-weight: bold;
-    line-height: 36px;
-    letter-spacing: 1.1px;
+    line-height: 58px;
+    letter-spacing: 3px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
@@ -328,40 +334,32 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 1.2px;
+    letter-spacing: .5px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container h3 {
     margin: 0px 0px 22px 0px;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 1.3px;
+    line-height: 30px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
 }
-.masthead .masthead-container .block-text {
-    width: 100vw;
-    height: 80px;
-    background-color: var(--bg-primary);
-    position: absolute;
-    top: 60vh;
-    left: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: baseline;
-}
 .masthead .masthead-container .block-text p {
     color: rgb(255, 255, 255);
-    font-size: 32px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 @media (min-width: 580px) {
+    .masthead {
+        height: 60vh;
+    }
+    .masthead .masthead-container .block-text {
+        top: 56vh;
+    }
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;
         font-size: 52px;
@@ -381,14 +379,21 @@
         font-size: 30px;
         font-weight: 500;
         line-height: 38px;
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
+        font-family: "Roboto", Sans-serif;
     }
     .masthead .masthead-container .block-text p {
-        font-size: 48px;
+        font-size: 42px;
     }
 }
-
-@media (min-width: 960px) {
+@media (min-width: 990px) {
+    .masthead {
+        height: 58vh;
+    }
+    .masthead .masthead-container .block-text {
+        top: 54vh;
+    }
     .masthead .masthead-container h1 {
         margin: 0px 0px 20px 0px;
         font-size: 60px;
@@ -399,8 +404,8 @@
     }
     .masthead .masthead-container h2 {
         margin: 0px 0px 22px 0px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15vw;
+        padding-right: 15vw;
         font-size: 30px;
         font-weight: 500;
         line-height: 42px;
@@ -415,15 +420,102 @@
         line-height: 40px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
+        font-family: "Roboto", Sans-serif;
     }
     .masthead .masthead-container .block-text p {
-        font-size: 56px;
+        font-size: 52px;
+    }
+}
+/* ===== MASTHEAD END/============*/
+
+
+
+/* ===== CONNECT FORM =============*/
+.connect-container {
+    box-sizing: border-box;
+    margin: 2px auto 10px auto;
+    border: 2px solid #333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.connect-heading {
+    padding: 50px 10px 0px 10px;
+    margin: 0 auto 0 auto;
+    width: 70vw;
+}
+.connect-form {
+    width: 70vw;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.connect-container .connect-heading img {
+   width: 200px; 
+   margin: 0px auto 0px auto;
+}
+.connect-container .connect-heading h1 {
+    color: var(--bg-primary);
+    text-align: center;
+    font-family: var(--font-primary);
+}
+.connect-container .connect-heading p {
+    text-align: center;
+    padding-left: 20px;
+}
+.connect-container .connect-heading .connect-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 990px) {
+    .connect-container {
+        flex-direction: row;
+    }
+    .connect-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 auto 0 auto;
+        width: 50vw;
+    }
+
+    .connect-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .connect-container .connect-heading h1 {
+        text-align: left;
+        padding-left: 100px;
+        font-size: 40px;
+    }
+    .connect-container .connect-heading p {
+        text-align: left;
+        padding-left: 100px;
+    }
+    .connect-container .connect-heading img {
+        margin-left: 100px;
+    }
+    .connect-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+        width: 50vw;
+    }
+    .jotform-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 5px;
     }
 }
 
+/* ===== CONNECT FORM END/ ========*/
 
 
-/* ===== MASTHEAD END/============*/
 
 /* == MENU ICON ==*/
     /* (container) .menu-icon  <-- bar(x) */
