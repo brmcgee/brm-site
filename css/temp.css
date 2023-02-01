@@ -138,18 +138,19 @@
 
 /* responsive menu  */
 .navbar-nav {
-    background-color: white;
+    background-color: var(--bg-primary);
     margin: 0px;
     box-shadow: 1px 3px 5px 3px rgba(75, 12, 12, 0.7);
 }
 .nav-bar .active {
     box-sizing: border-box;
     background-color: rgba(163, 30, 30, 1);
-    box-shadow: 1px 1px 1px 1px rgba(75, 12, 12, 0.7);
     padding-left: 0px;
     margin: 0px;
+    margin-right: 25px;
     color: white;
 }
+
 .navbar-nav .nav-item .nav-link {
     color:rgb(5, 5, 5);
     padding: 8px 6px;
@@ -162,29 +163,47 @@
 .nav-bar .navbar-collapse ul .active > .nav-link {
     color: white;
 } 
-.navbar-nav .nav-item .nav-link:hover {
+/* top links but not last  */
+
+.navbar-nav .nav-item .nav-link:not(:last-child):hover
+ {  
     background-color: var(--bg-primary);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 8px 6px;
     padding-left: 25px;
-    margin: 0px;
+    margin-right: 25px;
 }
 .navbar-nav .nav-item .active {
     color: white;
-    margin: 0px;
 }
+/* drop down link  */
 .dropdown {
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: rgb(255, 255, 255);
     margin: 0px;
-
+    margin-left: 25px;
+    margin-right: 25px;
 }
+
 .navbar-nav .nav-item .dropdown-item {
     padding: 8px 6px;
     padding-left: 25px;
     margin: 0px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+    background-color: var(--bg-primary);
+    color: white;
 }
 .dopdown-menu a:hover {
     background-color: rgb(129, 26, 26);
@@ -197,10 +216,13 @@
 }
 .dropdown-item:hover {
     background-color: var(--bg-primary);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 8px 6px;
     margin: 0px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
+    color: white;   
 }
 /* full menu  */
 @media (min-width: 960px) {
@@ -219,24 +241,44 @@
         border: 4px;
         border-radius: 2px;
         box-shadow: 1px 1px 1px 0px rgba(97, 97, 97, .4);
+        margin: 0px;
     }
     .nav-bar .navbar-brand{
         box-sizing: border-box;
     }
-    .navbar-nav .nav-item .nav-link {
+    .navbar-nav .nav-item .nav-link:not(:last-child):hover { 
         color:rgb(15, 15, 15);
-        letter-spacing: 1px;
+        letter-spacing: px;
         font-weight: bold;
         padding: 1px 16px;
         padding-left: 25px;
-        transition: .5s;
+        margin: 0px;
     }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+        color: rgb(0, 0, 0);
+        border-radius: 0px;
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+        background-color: var(--bg-primary);
+        color: rgb(255, 255, 255);
+    }
+    .navbar-nav .nav-item .nav-link {
+        color:rgb(15, 15, 15);
+        letter-spacing: px;
+        font-weight: bold;
+        padding: 1px 16px;
+        padding-left: 25px;
+        margin: 0px;
+    }
+
     .navbar-nav .nav-item .nav-link:hover {
         background-color: var(--bg-primary);
         color: white;
         width: 100%;
         padding: 1px 16px;
         padding-left: 25px;
+        margin: 0px;
     }
     .navbar-nav .nav-item .active {
         color: white;
@@ -246,20 +288,35 @@
         padding-left: 25px;
         background-color: var(--bg-primary);
     } 
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+        margin: 0px;
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+        margin: 0px;
+    }
     .navbar-nav .nav-item .dopdown-menu {
         padding: 12px 16px;
         padding-left: 25px; 
+        margin: 0px;
     }
     .navbar-nav .nav-item .dopdown-menu a:hover {
         background-color: rgb(255, 255, 255);
         padding: 12px 6px;
         padding-left: 25px;    
         background-color: white;
+        margin: 0px;
     }
     .navbar-nav .nav-item .dropdown-menu .dropdown-item {
         padding: 12px 6px;
         padding-left: 25px;
         background-color: white;
+        margin: 0px;
+    }
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: rgb(233, 233, 233);   
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
+        color: rgb(233, 233, 233);   
     }
     .navbar-nav .nav-item .dropdown-item:hover {
         background-color: var(--bg-primary);
@@ -267,24 +324,33 @@
         width: 100%;
         padding: 12px 6px;
         padding-left: 25px;
-    } 
+        margin: 0px;
+    }
+ 
 }
 /* === NAVBAR STYLE END/ ======  */
 
 
 
 /* ===== MASTHEAD ===============*/
+.filter {
+    -webkit-filter: brightness(98%) contrast(59%) opacity(88%) saturate(99%);
+    filter: brightness(98%) contrast(59%) opacity(88%) saturate(99%);
+}
+  
 .masthead {
     box-sizing: border-box;
     width: 100vw;
     height: 66vh;
-    background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(139, 142, 38, 0.5) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
+    /* background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(194, 84, 26, 0.7) 100%), url("../assets/gallery/bg-masthead.jpg") top center; */
+    background-image: url("../assets/gallery/bg-masthead.jpg");
+
     background-size: cover;
     position: relative;
 }
 .masthead .masthead-container .block-text {
     width: 100vw;
-    height: 60px;
+    height: 58px;
     background-color: var(--bg-primary);
     position: absolute;
     top: 62vh;
@@ -324,7 +390,6 @@
     font-size: 50px;
     font-weight: bold;
     line-height: 58px;
-    letter-spacing: 3px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
@@ -334,7 +399,6 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: .5px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
@@ -352,6 +416,7 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-transform: uppercase;
+    padding-top: 12px;
 }
 @media (min-width: 580px) {
     .masthead {
