@@ -1,0 +1,174 @@
+:root{
+    --text-primary: rgba(51, 51, 51, 1);
+    --text-secondary: rgba(163, 30, 30, 1);
+    --text-alert: rgba(226, 206, 19, 1);
+    --text-info: rgba(19, 167, 226, 1);
+    --text-dark: rgba(51, 51, 51, 1);
+    --text-white: rgb(240, 240, 240);
+    --text-success: rgb(57, 163, 30);
+    
+    --bg-primary: rgba(163, 30, 30, 1);
+    --bg-primary-hover: rgba(163, 30, 30, .9);
+
+    --bg-active: rgba(109, 35, 35, 0.7);
+    --bg-alert: rgba(226, 206, 19, 1);
+    --bg-white: rgb(255, 255, 255);
+    --bg-dark: rgba(51, 51, 51, 1);
+    --bg-light: rgb(184, 184, 184);
+
+
+    --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    /* CONTAINER HEIGHT ADJUSTMENTS */
+    --banner-height: 100px;
+    --nav-height: 80px;
+    --wrapper-height: 1500px;
+    --footer-height: 50px;
+}
+.bg-main {
+    background-color: var(--bg-primary);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    /* overflow-x: hidden; */
+}
+
+
+/* 4 CONTAINERS .BANNER .NAV-BAR .WRAPPER */
+.banner {
+    height: var(--banner-height);
+    background-color: var(--text-success);
+} 
+.nav-bar {
+    /* height: var(--nav-height); */
+    /* height: auto; */
+    background-color: var(--bg-alert);
+} 
+.wrapper {
+    height: var(--wrapper-height);
+    background-color:var(--text-info);
+}   
+
+/* NAV-BAR FIXED AT BANNER HEIGHT WITH JS */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer {
+     position: fixed;
+     bottom: 0px;
+     height: var(--footer-height);
+     width: 100%;
+     background-color: var(--bg-alert);
+
+}
+
+/* === BANNER STYLE =========  */
+
+/* === BANNER END/  =========  */
+
+/* ======== NAVBAR ============  */
+
+/* === NAVBAR STYLE END/ ======  */
+
+
+.btn-nav {
+    padding: 1px 3px;
+    border-radius: 7px;
+    transition: 0.5s;
+    border: 2px solid #333;
+  }
+
+.btn-nav:hover {
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 2px solid rgba(48, 24, 24,.5);
+}
+
+/* MENU ICON */
+    /* (container) .menu-icon  <-- bar(x) */
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        background-color: var(--bg-nav);
+    
+    }
+    .menu-icon:hover {
+        background-color: var(--bg-primary);
+    }
+      
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 28px;
+        height: 5px;
+        background-color: #333;
+        border-radius: 10px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+      
+    .change .bar1 { 
+        transform: translate(0, 11px) rotate(-45deg);
+        background-color: rgba(206, 206, 206, 0.4);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+        background-color: rgba(206, 206, 206, 0.4);
+    }
+    
+    
+    
+    /* float  */
+    .float-start { float: left; }
+    .float-end { float: right; }
+    
+    
+    /* padding  */
+    .py-0 { padding: 0px; }
+    .py-1 { padding: 1px; }
+    .py-2 { padding: 2px; }
+    .py-3 { padding: 3px; }
+    .py-5 { padding: 5px; }
+    .py-10 { padding: 10px; }
+    
+    
+    /* margin  */
+    .m-0 { margin: 0px; }
+    .m-1 { margin: 1px; }
+    .m-2 { margin: 2px; }
+    .m-3 { margin: 3px; }
+    .m-5 { margin: 5px; }
+    .m-10 {margin: 10px; }
+    
+    .mt-0 { margin-top: 0px; }
+    .mt-1 { margin-top: 1px; }
+    .mt-2 { margin-top: 2px; }
+    .mt-3 { margin-top: 3px; }
+    .mt-5 { margin-top: 5px; }
+    .mt-10 { margin-top: 10px; }
+    
+    .mb-0 { margin-bottom: 0px; }
+    .mb-1 { margin-bottom: 1px; }
+    .mb-2 { margin-bottom: 2px; }
+    .mb-3 { margin-bottom: 3px; }
+    .mb-5 { margin-bottom: 5px; }
+    .mb-10 { margin-bottom: 10px; }
+    
+    
+    
