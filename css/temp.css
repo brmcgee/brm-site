@@ -17,7 +17,8 @@
     --bg-light: rgb(184, 184, 184);
 
 
-    --font-primary:font-family: 'Montserrat', sans-serif;
+    --font-primary: font-family: 'Montserrat', sans-serif;
+  
   
     /* CONTAINER HEIGHT ADJUSTMENTS */
     --banner-height: 250px;
@@ -26,17 +27,27 @@
     --footer-height: 50px;
 }
 .bg-main {
-    background-color: var(--bg-primary);
+    background-color: rgba(163, 30, 30, 1);
+}
+/* FONTS  */
+.text-roboto {
+    font-family: "Roboto", Sans-serif;
 }
 
+.text-elite {
+    font-family: 'Special Elite', cursive;
+}
+
+/* BUTTONS  */
 .btn-outline-red {
     display: inline block;
+    font-family: "Roboto", Sans-serif;
     font-weight: 500;
     font-size: 17px;
     letter-spacing: 1.5px;
     padding: 10px 18px;
-    border-radius: 5px;
-    transition: 0.5s;
+    border-radius: 3px;
+    transition: 0.2s;
     border: 2px solid var(--bg-primary);
     color: white;
     text-decoration: none;
@@ -56,9 +67,6 @@
 
 }
 
-.text-elite {
-    font-family: 'Special Elite', cursive;
-}
 /* 4 CONTAINERS .BANNER .NAV-BAR .WRAPPER */
 .banner {
     max-height: var(--banner-height);
@@ -102,6 +110,7 @@
      height: var(--footer-height);
      width: 100%;
      overflow: hidden;
+     z-index: 1000;
      /* background-color: #333; */
 }
 
@@ -275,7 +284,7 @@
     box-sizing: border-box;
     width: 100vw;
     height: 65vh;
-    background: linear-gradient(to bottom, rgba(122, 122, 122, 0.4) 0%, rgba(58, 16, 16, 0.5) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
+    background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(139, 142, 38, 0.5) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
     background-size: cover;
     position: relative;
 }
@@ -306,26 +315,40 @@
 
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
-    line-height: 42px;
+    line-height: 36px;
+    letter-spacing: 1.1px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container h2 {
     margin: 0px 0px 22px 0px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 36px;
+    letter-spacing: 1.2px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    font-family: "Roboto", Sans-serif;
+}
+.masthead .masthead-container h3 {
+    margin: 0px 0px 22px 0px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 1.3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container .block-text {
     width: 100vw;
-    height: 90px;
+    height: 80px;
     background-color: var(--bg-primary);
     position: absolute;
-    top: 58vh;
+    top: 60vh;
     left: 0px;
     right: 0px;
     display: flex;
@@ -335,22 +358,29 @@
 }
 .masthead .masthead-container .block-text p {
     color: rgb(255, 255, 255);
-    font-size: 38px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 @media (min-width: 580px) {
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;
-        font-size: 42px;
+        font-size: 52px;
         font-weight: bold;
-        line-height: 48px;
+        line-height: 52px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
     }
     .masthead .masthead-container h2 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         line-height: 40px;
+        text-transform: uppercase;
+    }
+    .masthead .masthead-container h3 {
+        margin: 0px 0px 22px 0px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 38px;
         text-transform: uppercase;
     }
     .masthead .masthead-container .block-text p {
@@ -361,7 +391,7 @@
 @media (min-width: 960px) {
     .masthead .masthead-container h1 {
         margin: 0px 0px 20px 0px;
-        font-size: 58px;
+        font-size: 60px;
         font-weight: bold;
         line-height: 50px;
         color: rgb(255, 255, 255);
@@ -371,13 +401,21 @@
         margin: 0px 0px 22px 0px;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 500;
         line-height: 42px;
         letter-spacing: 1.1px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
     } 
+    .masthead .masthead-container h3 {
+        margin: 0px 0px 22px 0px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
     .masthead .masthead-container .block-text p {
         font-size: 56px;
     }
