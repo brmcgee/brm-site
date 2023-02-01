@@ -75,6 +75,7 @@ input {
     -webkit-tap-highlight-color: transparent;
 }
 
+
 /* 4 CONTAINERS .BANNER .NAV-BAR .WRAPPER */
 .banner {
     max-height: var(--banner-height);
@@ -82,13 +83,25 @@ input {
     margin: 0px;
     margin-bottom: 6px;
     padding: 0px;
+    padding-top: 2px;
 } 
 .nav-bar {
     width: 100%;
     background-color: var(--bg-primary);
-    margin: 0px;
+    margin: 0px auto 0 auto;
     padding: 0px;
 } 
+@media (min-width: 850px){
+ 
+    .navbar {
+        width: 80vw;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+    }
+ 
+}
 .container-fluid {
     margin:0px;
     padding:0px;
@@ -132,7 +145,7 @@ input {
 }
 
 /* remove second image mobile  */
-@media (max-width: 760px) {
+@media (max-width: 730px) {
     #bannerImg2 {
         display: none;
     }
@@ -150,7 +163,7 @@ input {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: 0px;
-    box-shadow: 1px 0px 2px 2px rgba(75, 12, 12, 0.7);
+    /* box-shadow: 1px 0px 2px 2px rgba(75, 12, 12, 0.7); */
 }
         /* top menu item */
 .nav-bar .active {
@@ -172,7 +185,7 @@ input {
     padding-left: 25px;
     margin: 0px;
 }
-@media (max-width: 950px) {
+@media (max-width: 800px) {
     .navbar-nav .nav-item .nav-link{
         cursor: default; 
         outline: none;
@@ -257,7 +270,7 @@ input {
     color: rgb(255, 255, 255);   
 }
 /* full menu  */
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
     .navbar-nav {
         background-color: var(--bg-primary);
         margin: 8px;
@@ -387,18 +400,18 @@ input {
 .masthead {
     box-sizing: border-box;
     width: 100vw;
-    height: 66vh;
+    height: 64vh;
     background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
     /* background-image: url("../assets/gallery/bg-masthead.jpg"), top center; */
     background-size: cover;
     position: relative;
 }
 .masthead .masthead-container .block-text {
-    width: 100vw;
+    width: 100%;
     height: 58px;
     background-color: var(--bg-primary);
     position: absolute;
-    top: 62vh;
+    top: 63vh;
     left: 0px;
     right: 0px;
     display: flex;
@@ -408,7 +421,7 @@ input {
 }
 .masthead::before {
     content: "";
-    background: rgba(35, 35, 35, .8);
+    background: rgba(45, 43, 43, 0.7);
     position: absolute;
     bottom: 0px;
     top: 0px;
@@ -432,9 +445,9 @@ input {
 }
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: bold;
-    line-height: 58px;
+    line-height: 50px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
@@ -443,36 +456,36 @@ input {
     margin: 0px 0px 22px 0px;
     font-size: 20px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 26px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container h3 {
     margin: 0px 0px 22px 0px;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 26px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
 }
 .masthead .masthead-container .block-text p {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 28px;
     text-transform: uppercase;
     padding-top: 12px;
 }
 @media (min-width: 580px) {
     .masthead {
-        height: 60vh;
+        height: 55vh;
     }
     .masthead .masthead-container .block-text {
-        top: 56vh;
+        top: 53vh;
     }
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;
-        font-size: 52px;
+        font-size: 46px;
         font-weight: bold;
         line-height: 52px;
         color: rgb(255, 255, 255);
@@ -480,21 +493,21 @@ input {
     }
     .masthead .masthead-container h2 {
         font-size: 22px;
-        font-weight: 500;
-        line-height: 40px;
+        line-height: 26px;
         text-transform: uppercase;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
     .masthead .masthead-container h3 {
         margin: 0px 0px 22px 0px;
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 28px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: "Roboto", Sans-serif;
     }
     .masthead .masthead-container .block-text p {
-        font-size: 42px;
+        font-size: 32px;
     }
 }
 @media (min-width: 990px) {
@@ -506,7 +519,7 @@ input {
     }
     .masthead .masthead-container h1 {
         margin: 0px 0px 20px 0px;
-        font-size: 60px;
+        font-size: 54px;
         font-weight: bold;
         line-height: 50px;
         color: rgb(255, 255, 255);
@@ -516,24 +529,24 @@ input {
         margin: 0px 0px 22px 0px;
         padding-left: 15vw;
         padding-right: 15vw;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 500;
-        line-height: 42px;
+        line-height: 32px;
         letter-spacing: 1.1px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
     } 
     .masthead .masthead-container h3 {
         margin: 0px 0px 22px 0px;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 32px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: "Roboto", Sans-serif;
     }
     .masthead .masthead-container .block-text p {
-        font-size: 52px;
+        font-size: 32px;
     }
 }
 /* ===== MASTHEAD END/============*/
