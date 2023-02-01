@@ -24,7 +24,7 @@
     --banner-bar-height: 33px;
     --banner-height: 250px;
     --nav-height: 80px;
-    --wrapper-height: 2500px;
+    --wrapper-height: 1000px;
     --footer-height: 35px;
 }
 .bg-main {
@@ -87,7 +87,6 @@
 }
 .wrapper {
     height: var(--wrapper-height);
-    background-color:var(--bg-light);
     margin: 0px;
     padding: 0px;
 }   
@@ -116,7 +115,6 @@
 }
 
 /* === BANNER STYLE =========  */
-
 .banner-bar {
     background-color: #333;
     box-shadow: 1px 2px 2px 0px gray;
@@ -132,10 +130,9 @@
         display: none;
     }
 }
-
-
-
 /* === BANNER END/  =========  */
+
+
 
 /* ======== NAVBAR ============  */
 
@@ -144,8 +141,6 @@
     background-color: white;
     margin: 0px;
     box-shadow: 1px 3px 5px 3px rgba(75, 12, 12, 0.7);
-
-
 }
 .nav-bar .active {
     box-sizing: border-box;
@@ -276,6 +271,8 @@
 }
 /* === NAVBAR STYLE END/ ======  */
 
+
+
 /* ===== MASTHEAD ===============*/
 .masthead {
     box-sizing: border-box;
@@ -284,7 +281,6 @@
     background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(139, 142, 38, 0.5) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
     background-size: cover;
     position: relative;
-    /* transition: linear 10ms; */
 }
 .masthead .masthead-container .block-text {
     width: 100vw;
@@ -298,9 +294,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: baseline;
-    /* transition: ease-out 10ms; */
 }
-
 .masthead::before {
     content: "";
     background: rgba(35, 35, 35, .8);
@@ -325,7 +319,6 @@
     text-align: center;
     padding: 0px 15px;
 }
-
 .masthead .masthead-container h1 {
     margin: 0px 0px 10px 0px;
     font-size: 50px;
@@ -355,7 +348,6 @@
     text-transform: uppercase;
     font-family: "Roboto", Sans-serif;
 }
-
 .masthead .masthead-container .block-text p {
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -395,7 +387,6 @@
         font-size: 42px;
     }
 }
-
 @media (min-width: 990px) {
     .masthead {
         height: 58vh;
@@ -435,10 +426,96 @@
         font-size: 52px;
     }
 }
-
-
-
 /* ===== MASTHEAD END/============*/
+
+
+
+/* ===== CONNECT FORM =============*/
+.connect-container {
+    box-sizing: border-box;
+    margin: 2px auto 10px auto;
+    border: 2px solid #333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.connect-heading {
+    padding: 50px 10px 0px 10px;
+    margin: 0 auto 0 auto;
+    width: 70vw;
+}
+.connect-form {
+    width: 70vw;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.connect-container .connect-heading img {
+   width: 200px; 
+   margin: 0px auto 0px auto;
+}
+.connect-container .connect-heading h1 {
+    color: var(--bg-primary);
+    text-align: center;
+    font-family: var(--font-primary);
+}
+.connect-container .connect-heading p {
+    text-align: center;
+    padding-left: 20px;
+}
+.connect-container .connect-heading .connect-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 990px) {
+    .connect-container {
+        flex-direction: row;
+    }
+    .connect-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 auto 0 auto;
+        width: 50vw;
+    }
+
+    .connect-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .connect-container .connect-heading h1 {
+        text-align: left;
+        padding-left: 100px;
+        font-size: 40px;
+    }
+    .connect-container .connect-heading p {
+        text-align: left;
+        padding-left: 100px;
+    }
+    .connect-container .connect-heading img {
+        margin-left: 100px;
+    }
+    .connect-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+        width: 50vw;
+    }
+    .jotform-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 5px;
+    }
+}
+
+/* ===== CONNECT FORM END/ ========*/
+
+
 
 /* == MENU ICON ==*/
     /* (container) .menu-icon  <-- bar(x) */
