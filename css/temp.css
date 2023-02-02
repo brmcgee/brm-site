@@ -25,7 +25,7 @@
     --banner-height: 250px;
     --nav-height: 80px;
     --wrapper-height: 1000px;
-    --footer-height: 35px;
+    --footer-height: 50px;
 }
 .bg-main {
     background-color: rgba(163, 30, 30, 1);
@@ -45,9 +45,9 @@
     font-family: "Roboto", Sans-serif;
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.1px;
     padding: 10px 18px;
-    border-radius: 3px;
+    border-radius: 10px;
     border: 3px solid var(--bg-primary);
     color: white;
     text-decoration: none;
@@ -64,8 +64,15 @@
     padding: 0px;
     font-family: var(--font-primary);
     font-size: 16px;
+    letter-spacing: normal;
     color: var(--text-black);
-
+    -webkit-tap-highlight-color: transparent;
+}
+select,
+button,
+textarea,
+input {
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* 4 CONTAINERS .BANNER .NAV-BAR .WRAPPER */
@@ -73,6 +80,7 @@
     max-height: var(--banner-height);
     width: 100%;
     margin: 0px;
+    margin-bottom: 6px;
     padding: 0px;
 } 
 .nav-bar {
@@ -121,7 +129,6 @@
     margin-bottom: 3px;
     height: var(--banner-bar-height);
     width: 100vw;
-    transition: linear height 300ms;
 }
 
 /* remove second image mobile  */
@@ -140,30 +147,44 @@
 .navbar-nav {
     background-color: var(--bg-primary);
     margin: 0px;
-    box-shadow: 1px 3px 5px 3px rgba(75, 12, 12, 0.7);
+    box-shadow: 1px 0px 2px 2px rgba(75, 12, 12, 0.7);
 }
+        /* top menu item */
 .nav-bar .active {
     box-sizing: border-box;
-    background-color: rgba(163, 30, 30, 1);
+    background-color: rgba(141, 24, 24, 0.7);
+    box-shadow: 2px 3px 3px  rgba(75, 12, 12, 0.7);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     padding-left: 0px;
-    margin: 0px;
-    margin-right: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
     color: white;
 }
-
+        /* text  */
 .navbar-nav .nav-item .nav-link {
     color:rgb(5, 5, 5);
     padding: 8px 6px;
     padding-left: 25px;
     margin: 0px;
 }
+
 .nav-bar .navbar-collapse .navbar-nav {
     box-sizing: border-box;
 }
 .nav-bar .navbar-collapse ul .active > .nav-link {
     color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 0px 0px 0px rgba(110, 10, 10, .8);
+    border: 1px solid rgba(110, 10, 10, .9);
 } 
 /* top links but not last  */
+.navbar-nav .nav-item .nav-link:not(:last-child){
+    box-shadow: 1px 0px 1px rgba(110, 10, 10, .1);
+    color: rgb(0, 0, 0);  
+}
 
 .navbar-nav .nav-item .nav-link:not(:last-child):hover
  {  
@@ -177,14 +198,15 @@
 .navbar-nav .nav-item .active {
     color: white;
 }
-/* drop down link  */
+/* drop down link  - middle ones */
 .dropdown {
     box-sizing: border-box;
     border-radius: 0px;
     background-color: rgb(255, 255, 255);
     margin: 0px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 0px 0px  rgb(110, 10, 10);
 }
 
 .navbar-nav .nav-item .dropdown-item {
@@ -194,11 +216,12 @@
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
     color: rgb(0, 0, 0);
-    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(110, 10, 10);
     background-color: rgb(255, 255, 255);
-    margin: 0px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 25px;
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
@@ -222,14 +245,14 @@
     margin: 0px;
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
-    color: white;   
+    color: rgb(255, 255, 255);   
 }
 /* full menu  */
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
     .navbar-nav {
         background-color: var(--bg-primary);
         margin: 8px;
-        box-shadow: 0 0 0 0;  
+        box-shadow: none;  
     }
     .nav-bar .active {
         background-color: rgba(163, 30, 30, 1);
@@ -240,7 +263,6 @@
     div .dropdown-menu {
         border: 4px;
         border-radius: 2px;
-        box-shadow: 1px 1px 1px 0px rgba(97, 97, 97, .4);
         margin: 0px;
     }
     .nav-bar .navbar-brand{
@@ -253,25 +275,34 @@
         padding: 1px 16px;
         padding-left: 25px;
         margin: 0px;
+        box-shadow: none;
     }
     .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
         color: rgb(0, 0, 0);
         border-radius: 0px;
         background-color: rgb(255, 255, 255);
+        box-shadow: none;
     }
     .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
         background-color: var(--bg-primary);
         color: rgb(255, 255, 255);
     }
+    .nav-bar .navbar-collapse ul .active > .nav-link {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        box-shadow: none;
+        border: none;
+    } 
     .navbar-nav .nav-item .nav-link {
         color:rgb(15, 15, 15);
-        letter-spacing: px;
         font-weight: bold;
         padding: 1px 16px;
         padding-left: 25px;
         margin: 0px;
     }
-
+    .nav-bar .navbar-collapse ul .active > .nav-link {
+        box-shadow: none;
+    }
     .navbar-nav .nav-item .nav-link:hover {
         background-color: var(--bg-primary);
         color: white;
@@ -290,6 +321,9 @@
     } 
     .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
         margin: 0px;
+    }
+    .navbar-nav .nav-item .nav-link:not(:last-child){
+        box-shadow: none;
     }
     .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
         margin: 0px;
@@ -326,6 +360,9 @@
         padding-left: 25px;
         margin: 0px;
     }
+    .dropdown {
+        box-shadow: none;
+    }
  
 }
 /* === NAVBAR STYLE END/ ======  */
@@ -342,9 +379,8 @@
     box-sizing: border-box;
     width: 100vw;
     height: 66vh;
-    /* background: linear-gradient(to bottom, rgba(187, 185, 185, 0.4) 0%, rgba(194, 84, 26, 0.7) 100%), url("../assets/gallery/bg-masthead.jpg") top center; */
-    background-image: url("../assets/gallery/bg-masthead.jpg");
-
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
+    /* background-image: url("../assets/gallery/bg-masthead.jpg"), top center; */
     background-size: cover;
     position: relative;
 }
