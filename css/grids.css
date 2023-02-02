@@ -1,0 +1,111 @@
+.main {
+    grid-area: -main;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 2px 20px 2px 4px;
+    background-color: rgba(199, 193, 16, 0.7);
+}
+.masthead {
+    grid-area: -masthead;
+}
+.services {
+    grid-area: -services;
+    margin-top: 50px;
+}
+.footer {
+    grid-area: -footer;
+}
+.ad {
+    grid-area: -ad;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 2px 20px 2px 4px;
+    background-color: rgb(121, 121, 121);
+}
+.sidebar {
+    grid-area: -sidebar;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: rgba(199, 16, 16, 0.7);
+}
+
+
+
+@media (min-width: 250px){
+
+    .wrapper {
+        display: grid;
+        gap: 0px;
+        grid-template-areas: 
+            /* "header"
+            "nav" */
+            "-masthead"
+            "-main"
+            "-services"
+            "-ad"
+            "-sidebar"
+            "-footer";
+    }
+    /* body {
+        background-color: blue;
+    } */
+
+}
+
+@media (min-width: 700px) {
+
+
+    .wrapper {
+        grid-template-columns:  2fr 5fr;
+        grid-template-areas: 
+            /* "header   header"
+            "nav      nav" */
+            "-masthead   -masthead"
+            "-main      -main"
+            "-services  -services"
+            "-sidebar       -ad"
+            "-footer    -footer";
+    }
+    /* body {
+        background-color: rgb(15, 187, 38);
+    } */
+}
+@media (min-width: 1000px) {
+    .main {
+        margin-top: 25px;
+    }
+    .wrapper {
+        grid-template-columns:  2fr 5fr;
+        grid-template-areas: 
+            /* "header   header"
+            "nav      nav" */
+            "-masthead   -masthead"
+            "-sidebar       -main"
+            "-ad            -main"
+            "-services     -services"
+            "-footer    -footer";
+    }
+    /* body {
+        background-color: rgb(187, 15, 115);
+    } */
+}
+
+
+@media (min-width: 1300px) {
+    .wrapper {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-areas:
+        "-masthead   -masthead -masthead -masthead"
+        "-sidebar      -main     -main   -ad"
+        "-sidebar   -content  -content -ad"
+        "-sidebar   -services  -services -ad"
+        "-footer     -footer    -footer -footer";
+        margin: 0px auto 0px auto;
+    }
+}
