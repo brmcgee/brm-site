@@ -24,7 +24,7 @@
     --banner-bar-height: 33px;
     --banner-height: 250px;
     --nav-height: 80px;
-    --wrapper-height: 1000px;
+    --wrapper-height: auto;
     --footer-height: 50px;
 }
 .bg-main {
@@ -127,11 +127,11 @@ input {
 }
 .footer {
      /* position: fixed; */
-     bottom: 0px;
+     /* bottom: 0px; */
      height: var(--footer-height);
      width: 100%;
-     overflow: hidden;
-     z-index: 99000;
+     /* overflow: hidden; */
+     /* z-index: 99000; */
      /* background-color: #333; */
 }
 
@@ -244,7 +244,7 @@ input {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
     background-color: var(--bg-primary);
@@ -676,6 +676,184 @@ input {
         transform: translate(0, -11px) rotate(45deg);
         background-color: rgba(255, 255, 255, 0.8);
     }
-/* == MENU ICON END/== */ 
-    
-    
+/* ===== MENU ICON END/ ==== */ 
+
+
+/* ======== SERVICES ======== */ 
+
+.services {
+    margin-top: 25px;
+}
+.services .service-item {
+    padding: 40px;
+    background: #fff;
+    height: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+  }
+
+  .services .service-item .icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--bg-primary);
+    font-size: 40px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+    line-height: 1.8;
+  }
+  
+  .services .service-item .icon:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(43, 42, 42, 0.4);
+    border-radius: 50px;
+    z-index: 1;
+    top: 10px;
+    right: -15px;
+    transition: 0.3s;
+  }
+  
+  .services .service-item h3 {
+    color: var(--color-default);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #ebebed;
+    transition: 0.3s;
+  }
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .service-item .readmore {
+    margin-top: 15px;
+    display: inline-block;
+    color: var(--bg-primary);
+  }
+  
+  .services .service-item:hover .icon:before {
+    background: var(--bg-primary);
+  }
+  
+  .services .service-item:hover h3 {
+    border-color: var(--bg-primary);
+  }
+/* ===== SERVICES END/ ===== */
+  
+  
+/* ======= FOOTER  ===== */
+  .footer {
+    color: #fff;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
+    background-size: cover;
+    font-size: 14px;
+    padding: 50px 0 70px 0;
+    position: relative;
+  }
+
+  .footer:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    inset: 0;
+  }
+
+  .footer .footer-content .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(163, 30, 30);
+  }
+  
+  .footer .footer-content .footer-info p strong {
+    color: #fff;
+  }
+  
+  .footer .footer-content .footer-info p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: #fff;
+  }
+  
+  .footer .footer-content .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  .footer .footer-content .social-links a:hover {
+    background: var(--bg-primary);
+    text-decoration: none;
+  }
+  .footer .footer-content .social-links img {
+    width: 32px;
+    height: 32px
+  }
+  .footer .footer-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .footer .footer-content .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-content .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-content .footer-links ul li {
+    padding: 8px 0;
+  }
+  
+  .footer .footer-content .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-content .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-content .footer-links ul a:hover {
+    color: #fff;
+  }
+
+  /* ===== FOOTER END/ ===== */
+  
+  
