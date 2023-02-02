@@ -58,6 +58,25 @@
     border: 3px solid rgba(163, 30, 30, 1);
     color: white;
 }
+.btn-outline {
+    display: inline block;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 3px solid var(--bg-primary);
+    background-color: rgb(163, 30, 30);
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    transition: 0.2s;
+}
+.btn-outline:hover {
+    background-color: rgba(121, 13, 13, 1);
+    border: 3px solid rgb(162, 35, 35);
+    color: rgb(32, 31, 31);
+}
 
 * {
     margin: 0px;
@@ -723,8 +742,9 @@ input {
   }
   
   .services .service-item h3 {
-    color: var(--color-default);
+    color: var(--bg-primary);
     font-weight: 700;
+    font-family: var(--font-primary);
     margin: 0 0 20px 0;
     padding-bottom: 8px;
     font-size: 22px;
@@ -738,6 +758,7 @@ input {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
+    font-family: var(--font-primary);
   }
   
   .services .service-item .readmore {
