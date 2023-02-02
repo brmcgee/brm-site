@@ -76,12 +76,13 @@
         background-color: rgb(15, 187, 38);
     } */
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .main {
         margin-top: 25px;
     }
     .wrapper {
         grid-template-columns:  2fr 5fr;
+        gap: 25px;
         grid-template-areas: 
             /* "header   header"
             "nav      nav" */
@@ -90,22 +91,8 @@
             "-ad            -services"
             "-footer    -footer";
     }
-    /* body {
-        background-color: rgb(187, 15, 115);
-    } */
+
 }
 
 
 
-@media (min-width: 1300px) {
-    .wrapper {
-        grid-template-columns: 2fr 4fr 2fr;
-        gap: 5px;
-        grid-template-areas:
-        "-masthead   -masthead   -masthead "
-        " -sidebar     -main       -main   "
-        " -ad         -services   -services   " 
-        "-footer     -footer    -footer  ";
-        margin: 0px auto 0px auto;
-    }
-}

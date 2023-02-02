@@ -54,7 +54,7 @@
     transition: 0.2s;
 }
 .btn-outline-red:hover {
-    background-color: rgba(163, 30, 30, .8);
+    background-color: rgba(133, 24, 24, 1);
     border: 3px solid rgba(163, 30, 30, 1);
     color: white;
 }
@@ -68,7 +68,8 @@
     border-radius: 10px;
     border: 3px solid var(--bg-primary);
     background-color: rgb(163, 30, 30);
-    color: rgb(31, 30, 30);
+    color: rgb(220, 217, 217);
+    font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -698,6 +699,17 @@ input {
 /* ===== MENU ICON END/ ==== */ 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ======== SERVICES ======== */ 
 
 .services {
@@ -781,7 +793,7 @@ input {
   .footer {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
     background-size: cover;
     font-size: 14px;
     padding: 50px 0 70px 0;
