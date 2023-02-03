@@ -18,7 +18,7 @@
 
 
     --font-primary: font-family: 'Montserrat', sans-serif;
-  
+    --font-roboto: font-family: "Roboto", Sans-serif;
   
     /* CONTAINER HEIGHT ADJUSTMENTS */
     --banner-bar-height: 33px;
@@ -153,6 +153,32 @@ input {
      /* overflow: hidden; */
      /* z-index: 99000; */
      /* background-color: #333; */
+}
+.footer-bar {
+    height: 46px;
+    width: 100%;
+    background-color: #333; 
+    position: fixed;
+    bottom: 0px;
+    z-index: 99999;
+}
+.footer-bar .footer-content h3 {
+    color: white;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.footer-bar .footer-content h4 {
+    color: rgb(222, 222, 7);
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 1.1px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.footer-bar .footer-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* === BANNER STYLE =========  */
@@ -569,8 +595,49 @@ input {
         font-size: 32px;
     }
 }
-/* ===== MASTHEAD END/============*/
+/* ===== MASTHEAD END/==============*/
 
+
+/* ======= MINI-MASTHEAD  ========== */
+.mini-masthead {
+    color: #fff;
+    height: auto;
+    /* background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center; */
+    background-size: cover;
+    background: linear-gradient(rgb(11, 11, 11) 0%, rgba(0, 0, 0, 0.8) 60%);
+    font-size: 14px;
+    padding: 20px 0 30px 0;
+    position: relative;
+}
+  /* dimmer  */
+.mini-masthead:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    inset: 0;
+}
+.mini-masthead .mini-container h1 {
+    font-size: 24px;
+    margin: 2px 0 8px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(244, 239, 239);
+}
+ 
+.mini-masthead .mini-container h3 {
+    color: rgb(254, 254, 254);
+    font-size: 1.3em;
+}
+.mini-masthead .mini-container h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-style: italic;
+}
+  
+  
+/* ===== MINI MASTHEAD END/============*/
 
 
 /* ===== CONNECT FORM =============*/
@@ -713,81 +780,87 @@ input {
 /* ======== SERVICES ======== */ 
 
 .services {
-    margin-top: 25px;
-}
-.services .service-item {
-    padding: 40px;
-    background: #fff;
-    height: 100%;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #e7e7e7;
-  }
-
-  .services .service-item .icon {
-    width: 48px;
-    height: 48px;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  
-  .services .service-item .icon i {
-    color: var(--bg-primary);
-    font-size: 40px;
-    transition: ease-in-out 0.3s;
-    z-index: 2;
-    position: relative;
-    line-height: 1.8;
-  }
-  
-  .services .service-item .icon:before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: rgba(43, 42, 42, 0.4);
-    border-radius: 50px;
-    z-index: 1;
-    top: 10px;
-    right: -15px;
-    transition: 0.3s;
-  }
-  
-  .services .service-item h3 {
-    color: var(--bg-primary);
-    font-weight: 700;
     font-family: var(--font-primary);
+}
+.services .section-header h2 {
+    color: var(--bg-primary);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     margin: 0 0 20px 0;
     padding-bottom: 8px;
-    font-size: 22px;
-    position: relative;
+    font-size: 24px;
     display: inline-block;
-    border-bottom: 4px solid #ebebed;
+    border-bottom: 4px solid rgb(163, 30, 30);
     transition: 0.3s;
   }
-  
-  .services .service-item p {
+  .services .section-header p {
     line-height: 24px;
     font-size: 14px;
-    margin-bottom: 0;
-    font-family: var(--font-primary);
+    margin-bottom: 5;
+    font-family: 'Montserrat', sans-serif;
   }
-  
-  .services .service-item .readmore {
-    margin-top: 15px;
+  .services .row div .card {
+    border: none;
+  }
+  .services .row div .card .card-body h5  {
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 8px 5px;
+    padding-bottom: 1px;
+    font-size: 18px;
     display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .services .row div .card .card-body h5:hover  {
     color: var(--bg-primary);
+    display: inline-block;
+    border-bottom: 3px solid rgb(163, 30, 30);
+    transition: 0.3s;
   }
-  
-  .services .service-item:hover .icon:before {
-    background: var(--bg-primary);
+  .services .row div .card .card-body p  {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:.5px;
+    font-size: 15px;
+    display: inline-block;
+    transition: 0.3s;
   }
-  
-  .services .service-item:hover h3 {
-    border-color: var(--bg-primary);
+  .services .row div .card .card-body img {
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 2px 3px 6px 2px rgb(197, 197, 197);
   }
 /* ===== SERVICES END/ ===== */
-  
+
+
+/* ====== CONTACT ========  */
+.content {
+    display: block
+}
+
+@media (min-width: 600px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+}
+.contact .contact-card {
+
+}
+/* ==== CONTACT END/========  */
   
 /* ======= FOOTER  ===== */
   .footer {
@@ -799,7 +872,7 @@ input {
     padding: 50px 0 70px 0;
     position: relative;
   }
-
+  /* dimmer  */
   .footer:before {
     content: "";
     background: rgba(0, 0, 0, 0.8);
@@ -812,7 +885,7 @@ input {
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     color: rgb(163, 30, 30);
   }
@@ -889,4 +962,6 @@ input {
 
   /* ===== FOOTER END/ ===== */
   
+ 
   
+
