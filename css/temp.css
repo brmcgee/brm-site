@@ -34,7 +34,9 @@
 .text-roboto {
     font-family: "Roboto", Sans-serif;
 }
-
+.text-mont {
+    font-family: 'Montserrat', sans-serif;
+}
 .text-elite {
     font-family: 'Special Elite', cursive;
 }
@@ -315,6 +317,13 @@ input {
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
     color: rgb(255, 255, 255);   
 }
+.navbar i {
+    color: #c8be06;
+    transition: .3s;
+}
+.navbar i:hover {
+    color: #9d950b;
+}
 /* full menu  */
 @media (min-width: 990px) {
     .navbar-nav {
@@ -438,32 +447,40 @@ input {
 
 
 /* ===== MASTHEAD ===============*/
-.filter {
-    -webkit-filter: brightness(98%) contrast(59%) opacity(88%) saturate(99%);
-    filter: brightness(98%) contrast(59%) opacity(88%) saturate(99%);
-}
-  
+
+/* darker filter - new  */
 .masthead {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 61vh;
+    color: #fff;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+  /* dimmer  */
+  .masthead:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    inset: 0;
+  }
+
+/* lighter filter - old  */
+
+/* .masthead {
     box-sizing: border-box;
     width: 100vw;
     height: 64vh;
     background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") top center;
-    /* background-image: url("../assets/gallery/bg-masthead.jpg"), top center; */
+    background-image: url("../assets/gallery/bg-masthead.jpg"), top center;
     background-size: cover;
     position: relative;
-}
-.masthead .masthead-container .block-text {
-    width: 100%;
-    height: 58px;
-    background-color: var(--bg-primary);
-    position: absolute;
-    top: 63vh;
-    left: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: baseline;
 }
 .masthead::before {
     content: "";
@@ -473,6 +490,20 @@ input {
     top: 0px;
     left: 0px;
     right: 0px;
+} */
+
+.masthead .masthead-container .block-text {
+    width: 100%;
+    height: 58px;
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: 60vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: baseline;
 }
 .masthead .masthead-container {
     position: absolute;
@@ -522,7 +553,7 @@ input {
     text-transform: uppercase;
     padding-top: 12px;
 }
-@media (min-width: 580px) {
+@media (min-width: 125px) {
     .masthead {
         height: 55vh;
     }
@@ -782,52 +813,65 @@ input {
 .services {
     font-family: var(--font-primary);
 }
+.services .row .card .card-body {
+   
+    padding: 2px 0 1px 0;;
+    
+}
 .services .section-header h2 {
     color: var(--bg-primary);
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    margin: 0 0 20px 0;
-    padding-bottom: 8px;
-    font-size: 24px;
+    margin: 0 0 4px 5px;
+    padding-bottom: 0px;
+    font-size: 28px;
     display: inline-block;
-    border-bottom: 4px solid rgb(163, 30, 30);
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(163, 30, 30);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     transition: 0.3s;
   }
   .services .section-header p {
     line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 5;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 5px;
     font-family: 'Montserrat', sans-serif;
   }
   .services .row div .card {
     border: none;
   }
   .services .row div .card .card-body h5  {
-    color: black;
+    display: inline-block;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 8px 5px;
-    padding-bottom: 1px;
-    font-size: 18px;
-    display: inline-block;
     text-transform: uppercase;
-    border-bottom: 3px solid black;
-    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 3px 0;
+    font-size: 20px;
+    color: #fff;
+    border: 3px solid rgb(163, 30, 30);
+    background-color: rgb(163, 30, 30);
+    border-radius: 4px;
     cursor: pointer;
     transition: 0.3s;
   }
   .services .row div .card .card-body h5:hover  {
-    color: var(--bg-primary);
+    color: rgba(245, 245, 245, 0.9);
     display: inline-block;
-    border-bottom: 3px solid rgb(163, 30, 30);
     transition: 0.3s;
   }
+  .services .row div .card .card-body h5:active  {
+    box-shadow: 1px 1px gray;
+  }
   .services .row div .card .card-body p  {
-    color: #333;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:.5px;
-    font-size: 15px;
+    padding-top: 5px;
+    font-size: 16px;
     display: inline-block;
     transition: 0.3s;
   }
@@ -857,9 +901,7 @@ input {
     /* background-color: aqua; */
     width: 100%;
 }
-.contact .contact-card {
 
-}
 /* ==== CONTACT END/========  */
   
 /* ======= FOOTER  ===== */
@@ -869,7 +911,7 @@ input {
     background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
     background-size: cover;
     font-size: 14px;
-    padding: 50px 0 70px 0;
+    padding: 30px 0 60px 0;
     position: relative;
   }
   /* dimmer  */
@@ -963,5 +1005,110 @@ input {
   /* ===== FOOTER END/ ===== */
   
  
-  
 
+
+  /* GRID TEMPLATE AREAS  */
+/* =========== MAIN ============ */
+
+.main .main-content h1 {
+    font-family: "Roboto", Sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.main .main-content .main-content-info p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+}
+ /* ======== MAIN END/ ========= */
+  
+/* =========== SIDEBAR ============ */
+
+.sidebar  {
+    /* border: 1px double rgb(255, 220, 220); */
+}
+.sidebar .sidebar-card .sidebar-title h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    background-color: rgba(190, 176, 24, 0.1);
+    color: #080808;
+    border-radius: 12px;
+    box-shadow: 2px 3px 6px 2px rgb(216, 216, 216);
+    margin-top: 38px;
+    margin: 38px auto 48px auto;
+    padding: 28px 10px 20px 10px;
+    max-width: 350px;
+    text-align: center;
+}
+.sidebar .sidebar-card .sidebar-title h2 span {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 42px;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    color: rgb(163, 30, 30);
+}
+
+.sidebar .sidebar-card .sidebar-info p {
+    /* background-color: aqua; */
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 1.03px;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 32px 9px 40px 9px;
+    text-align: center;
+
+
+}
+.sidebar .sidebar-card .sidebar-info .sidebar-img {
+    margin-top: 8px;
+    border: none;
+}
+ /* ======== SIDEBAR END/ ========= */
+ 
+
+ /* =========== SIDEBAR ============ */
+
+.ad  {
+    /* border: 1px double rgb(255, 220, 220); */
+}
+.ad .ad-card .ad-title h2 {
+    /* font-family: "Roboto", Sans-serif; */
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    background-color: rgba(163, 30, 30, .1);
+    color: #080808;
+    border-radius: 12px;
+    box-shadow: 2px 3px 6px 2px rgb(216, 216, 216);
+    margin-top: 38px;
+    margin: 38px auto 48px auto;
+    padding: 28px 10px 20px 10px;
+    max-width: 350px;
+    text-align: center;
+}
+.ad .ad-card .ad-info p {
+    /* background-color: aqua; */
+    /* font-family: "Roboto", Sans-serif; */
+    font-family: "Roboto", Sans-serif;
+    line-height: 34px;
+    font-size: 18px;
+    padding: 32px 8px 40px 8px;
+    text-align: center;
+}
+.ad .ad-card .ad-img {
+    padding-top: 20px;
+    width: 266px;
+    border: none;
+    vertical-align: top;
+    margin: 0 auto 0 auto;
+}
+ /* ======== SIDEBAR END/ ========= */
+ 
