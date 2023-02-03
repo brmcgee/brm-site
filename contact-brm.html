@@ -18,19 +18,8 @@
 
 <!-- local style sheet  -->
 <link rel="stylesheet" href="css/temp.css">
+<!--.footer-bar bar fixed  -->
 
-<style>
-  /* footer bar fixed */
-  .footer {
-     position: fixed;
-     bottom: 0px;
-     height: 44px;
-     width: 100%;
-     overflow: hidden;
-     z-index: 99000;
-     background-color: #333;
-}
-</style>
             <!-- ============= JOTFORM =================== -->
             <!-- <script src="https://cdn03.jotfor.ms/static/prototype.forms.js?3.3.38911" type="text/javascript"></script> -->
             <!-- <script src="https://cdn01.jotfor.ms/static/jotform.forms.js?3.3.38911" type="text/javascript"></script> -->
@@ -123,23 +112,21 @@
 </div> 
 <!-- =========== NAV-BAR END/========== -->
 
+
 <!-- ============ WRAPPER ============= -->
+<!-- ============= CONTENT ============== --> 
 <div class="wrapper row">
-  <div class="masthead">
-    <div class="masthead-container">
+  <!-- ========== MINI-MASTHEAD =========== -->
+  <div class="mini-masthead">
+    <div class="mini-container container">
       <h3>Connect with Us</h3>
-      <h1>BRM Contractors</h1>
+      <h1>BRM Contractors Inc</h1>
       <h2>Questions - We have answers .. Connect with BRM</h2>
-      <a href="#contact-brm.html" class="btn-outline-red">FREE ESTIMATE</a>
-      <div class="block-text">
-        <p>Total home repair</p>
-      </div>
     </div>
 </div>
-
-
-<!-- ============= CONTENT =================== --> 
-      <div class="connect-container" style="padding-bottom: 300px;">
+<!-- ======== MINI-MASTHEAD END/ ========= -->
+    <!-- ======== JOT FORM CONETENT ======== -->
+    <div class="connect-container" style="padding-bottom: 300px;">
         <div class="connect-heading">
             <div class="connect-content">
                 <img class="rounded mx-auto-d-block" src="assets/logo/free-estimate.png" alt="BRM" style="width:200px;">
@@ -192,24 +179,34 @@
          </form><script type="text/javascript">JotForm.ownerView=true;</script>
          <!-- ============= JOTFORM END// ============== -->
         </div>
-      </div>
-   
- </div>
-<!-- ============= CONTENT END// ============== -->
-
+    </div>
+    <!-- ===== JOT FORM CONETENT END/ ====== -->
+</div>
+<!-- ========= CONTENT END// ============ -->
 <!-- =========== WRAPPER END/========== -->
 
-<!-- ============ FOOTER ============= -->
-<footer class="footer">
-  <div class="container-fluid bg-dark">
-    <div class="row justify-content-center">
-      <div class="text-center">
-        <p class="py-3 h5 text-warning text-elite">Call 724.787.3758</p>
+
+<!-- ============ FOOTER ============== -->
+<footer id="footer" class="footer-bar">
+  <div class="footer-content position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-12">
+          <div class="footer-info">
+            <div class="left">
+              <h3>BRM Contractors Inc</h3>
+            </div>
+            <div class="right">
+              <h4>724.787.3758</h4>
+            </div>  
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  
 </footer>
-<!-- =========== FOOTER END/========== -->
+<!-- =========== FOOTER END/=========== -->
 
 <!-- local js  -->
 <script src="js/main.js"></script>

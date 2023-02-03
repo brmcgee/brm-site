@@ -1,3 +1,5 @@
+/* index.html grid styling  */
+
 .main {
     grid-area: -main;
     width: 100%;
@@ -38,7 +40,6 @@
 
 
 @media (min-width: 250px){
-
     .wrapper {
         display: grid;
         gap: 0px;
@@ -55,12 +56,9 @@
     /* body {
         background-color: blue;
     } */
-
 }
 
 @media (min-width: 700px) {
-
-
     .wrapper {
         grid-template-columns:  2.5fr 2.5fr;
         grid-template-areas: 
@@ -76,6 +74,7 @@
         background-color: rgb(15, 187, 38);
     } */
 }
+
 @media (min-width: 1200px) {
     .main {
         margin-top: 25px;
@@ -91,7 +90,9 @@
             "-ad            -services"
             "-footer    -footer";
     }
-
+        /* body {
+        background-color: rgb(187, 15, 155);
+    } */
 }
 
 
