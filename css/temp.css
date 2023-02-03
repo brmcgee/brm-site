@@ -70,7 +70,7 @@
     border-radius: 10px;
     border: 3px solid var(--bg-primary);
     background-color: rgb(163, 30, 30);
-    color: rgb(220, 217, 217);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
@@ -78,7 +78,7 @@
 .btn-outline:hover {
     background-color: rgba(121, 13, 13, 1);
     border: 3px solid rgb(162, 35, 35);
-    color: rgb(32, 31, 31);
+    color: rgb(168, 168, 168);
 }
 
 * {
@@ -245,8 +245,8 @@ input {
 }
 .nav-bar .navbar-collapse ul .active > .nav-link {
     color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
     box-shadow: 1px 0px 0px 0px rgba(110, 10, 10, .8);
     border: 1px solid rgba(110, 10, 10, .9);
 } 
@@ -286,8 +286,8 @@ input {
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
     color: rgb(0, 0, 0);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
     box-shadow: 2px 2px 2px rgb(110, 10, 10);
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
@@ -339,7 +339,7 @@ input {
     }
     div .dropdown-menu {
         border: 4px;
-        border-radius: 2px;
+        border-radius: 0px;
         margin: 0px;
     }
     .nav-bar .navbar-brand{
@@ -1139,7 +1139,35 @@ input {
 
 
  /* =========== MODAL ============= */
- 
+
+.modal-content .modal-header {
+    background-color: rgb(163, 30, 30);
+}
+.modal-content .modal-header .modal-title {
+    font-weight: 500;
+    font-family: "Roboto", Sans-serif;
+    margin: 0 0 4px 5px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 3px solid rgb(163, 30, 30);
+    transition: 0.3s;
+ }
+.modal-content .modal-body .schedule-message h5 {
+    font-family: "Roboto", Sans-serif;
+    margin: 0 0 4px 0;
+    padding-bottom: 0px;
+    font-size: 24px;
+ }
+.modal-content .modal-body .schedule-message a {
+    font-family: "Roboto", Sans-serif;
+    padding-bottom: 8px 16px 8px 16px;
+    font-size: 18px;
+    color: white;
+    
+ }
 
   /* ======== MODAL END/ ========== */
  
