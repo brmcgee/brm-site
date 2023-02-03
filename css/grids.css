@@ -44,8 +44,6 @@
         display: grid;
         gap: 0px;
         grid-template-areas: 
-            /* "header"
-            "nav" */
             "-masthead"
             "-main"
             "-services"
@@ -62,8 +60,6 @@
     .wrapper {
         grid-template-columns:  2.5fr 2.5fr;
         grid-template-areas: 
-            /* "header   header"
-            "nav      nav" */
             "-masthead   -masthead"
             "-main      -main"
             "-services  -services"
@@ -83,8 +79,6 @@
         grid-template-columns:  2fr 5fr;
         gap: 25px;
         grid-template-areas: 
-            /* "header   header"
-            "nav      nav" */
             "-masthead   -masthead"
             "-sidebar       -main"
             "-ad            -services"
