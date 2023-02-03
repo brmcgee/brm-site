@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>--BRM</title>
+<title>About - BRM Contractors Inc</title>
 <link rel="icon" href="assets/logo/brm-ico.png" sizes="32x32" />
 
 <!-- Latest compiled and minified CSS -->
@@ -17,8 +17,12 @@
 <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<!-- local style sheet  -->
-<link rel="stylesheet" href="css/temp.css">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
+
+<!-- local style sheet by brm  -->
+<link rel="stylesheet" href="css/temp.css" type="text/css">
 
 
 
@@ -39,12 +43,13 @@
 </div>
 <!-- =========== BANNER END/ ========== -->
 
+
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <img class="ms-2 rounded" src="assets/logo/brm-ico.png" alt="BRM">
+      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -68,7 +73,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="about.html">About BRM</a>
-            <a class="dropdown-item" href="contact-brm.html">Contact Info</a>
+            <a class="dropdown-item" href="contact-brm.html">Contact</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -83,11 +88,14 @@
             <a class="dropdown-item" href="#services">Handyman Services</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
-              <button class="btn btn-outline-dark">Schedule</button> </a>
+              <button type="button" class="btn btn-outline" data-toggle="modal" data-target="#exampleModalCenter">
+                Schedule
+              </button>
+            </a>
           </div>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="contact-brm.html">Contact Us</a>
+          <a class="nav-link" id="lastNav" href="contact-brm.html">Connect with BRM</a>
         </li>
     </div>
   </nav>
@@ -95,23 +103,43 @@
 </div> 
 <!-- =========== NAV-BAR END/========== -->
 
+
 <!-- ========== MINI-MASTHEAD =========== -->
-  <div class="mini-masthead">
+<div class="mini-masthead">
     <div class="mini-container container">
       <h3>About BRM Contractors</h3>
       <h1>BRM Contractors Inc</h1>
       <h2>Questions - We have answers .. Connect with BRM</h2>
     </div>
-  </div>
-  <!-- ======== MINI-MASTHEAD END/ ========= -->
+</div>
+<!-- ======== MINI-MASTHEAD END/ ========= -->
 
-
-
-  <!-- ============= WRAPPER ================== -->
-  <div class="wrapper" style="padding-bottom: 50px;">
+<!-- ============= WRAPPER ================== -->
+<div class="wrapper" style="padding-bottom: 50px;">
 
     <!-- ============= CONTENT ============== --> 
     <section class="content">
+      <!-- ============ MAIN ================= -->
+        <div class="main">
+          <div class="overflow-hidden" style="max-height: 60vh;">
+            <div class="container px-5 ">
+              <img src="assets/logo/brm-3.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 mx-auto d-block" alt="BRM - Home" width="400" height="300" loading="lazy">
+              
+            </div>
+          </div>
+          <div class="px-4 pt-0 my-0 text-center border-bottom">
+            <h1 class="h-4 text-red text-roboto text-uppercase">Family owned and operated</h1>
+            <div class="col-md-8 mx-auto">
+              <p class="lead mb-4">We are a home remodel company with decades of experience providing solutions to our clients. We are a family owned and operated company serving the Western PA area. Licensed and fully insured. We look forward to earning your business</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href="services.html" class="btn-outline">Services</a>
+                <a href="contact-brm.html" class="btn-outline">Connect</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- ========== MAIN END/=============== -->  
+
       <!-- =========== CONTACT ============= -->
       <div class="contact container-sm">
         <div class="py-4">
@@ -161,38 +189,10 @@
       </div>
       </div>
       <!-- ========= CONTACT END/ ============= -->
-        <!-- ============ MAIN ================= -->
-        <div class="main">
-          <div class="overflow-hidden" style="max-height: 60vh;">
-            <div class="container px-5 ">
-              <img src="assets/gallery/used-treasures-matt-salandro.png" class="img-fluid border rounded-3 shadow-lg mb-4 mx-auto d-block" alt="BRM - Home" width="700" height="500" loading="lazy">
-            </div>
-          </div>
-          <div class="px-4 pt-0 my-0 text-center border-bottom">
-            <h1 class="h-4 text-red text-roboto text-uppercase">Family owned and operated</h1>
-            <div class="col-md-8 mx-auto">
-              <p class="lead mb-4">Chances are if it's broke - we can fix it. Give us a call today 
-                and one of our technicians will arrive and diagnose the problem. Provide insight 
-                and a solution. With over 20 years in the construction industry BRM has you covered. 
-                We are a family owned and operated company serving the Western PA area. Licensed and fully insured.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <a href="services.html" class="btn-outline">Services</a>
-                <a href="contact-brm.html" class="btn-outline">Connect</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ========== MAIN END/=============== -->
     </section>
-    
-
     <!-- ============ CONTENT END// ============== --> 
-    
-  
-    
-  
-  </div>
-  <!-- ========== WRAPPER END/ ================ -->
+</div>
+<!-- ========== WRAPPER END/ ================ -->
 
 
 <!-- ============ FOOTER ============== -->
@@ -208,12 +208,14 @@
             <p>
               PO Box 66 <br>
               Hannastown, PA 15635<br><br>
-              <strong>Phone:</strong> 724-787-3758<br>
-              <strong>Email:</strong> brianrmcgee@gmail.com<br>
+              <span><i class="fa-solid fa-phone" style="color:#c8be06;"></i></i></span> <strong>Phone:</strong> 724-787-3758<br>
+              <span><i class="fa-light fa-at" style="color:#c8be06;font-size:20px;"></i></span><strong>Email:</strong> brianrmcgee@gmail.com<br>
             </p>
             <div class="social-links d-flex mt-3">
+              
               <a href="https://www.facebook.com/profile.php?id=100054525456256#" class="d-flex align-items-center justify-content-center"><img src="assets/logo/facebook.jfif" alt="BRM"></img></a>
               <a href="http://www.brmcontractors.net" class="d-flex align-items-center justify-content-center"><img src="assets/logo/brm-ico.png" alt="BRM"></img></a>
+              <a href="mailto:brianrmcgee@gmail.com" class="d-flex align-items-center justify-content-center"><img src="assets/logo/email.png" alt="BRM"></img></a>
             </div>
           </div>
         </div>
@@ -235,6 +237,38 @@
   
 </footer>
 <!-- =========== FOOTER END/=========== -->
+
+
+<!-- =======---==== MODAL ==============  -->
+<!-- temp - alert for scheduling portal to call office  -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">BRM Contractors Inc</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="ps-1 pe-1" aria-hidden="true"> <i class="fa-solid fa-xmark" style="font-size:28px;"></i> </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="schedule-message" id="schedule">
+          <h5>Scheduling unavailable</h5>
+          <p>Please call the office at (724) 787-3758 or send us a message</p>
+          <h5></h5>
+          <a href="contact-brm.html" role="button" class="btn btn-outline popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Send BRM a Message</a>
+          <hr>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========= MODAL END/ ==============  -->
+
+
+
 
 
 
