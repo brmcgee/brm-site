@@ -1018,6 +1018,8 @@ input {
 
 
   /* GRID TEMPLATE AREAS  */
+
+
 /* =========== MAIN ============ */
 
 .main .main-content h1 {
@@ -1033,6 +1035,8 @@ input {
 }
  /* ======== MAIN END/ ========= */
   
+
+
 /* =========== SIDEBAR ============ */
 
 .sidebar  {
@@ -1084,7 +1088,7 @@ input {
  /* ======== SIDEBAR END/ ========= */
  
 
- /* =========== SIDEBAR ============ */
+ /* =============== AD ============ */
 
 .ad  {
     border: 0px solid rgb(227, 13, 170);
@@ -1134,7 +1138,7 @@ input {
     vertical-align: top;
     margin: 0 auto 0 auto;
 }
- /* ======== SIDEBAR END/ ========= */
+ /* ============ AD END/ ========= */
 
 
 
