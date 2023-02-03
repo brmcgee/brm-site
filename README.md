@@ -1,2 +1,3 @@
-# brm-site
-BRM Website 
+<h1>BRM Contractors Inc</h1>
+<h4>Project by Brian McGee</h4>
+<p>Welcome to my Website for my contracting company that I have been wokring on while learning to code. This is awesome journey for me as I learn. I am enjoying working this project for my company. I am using Bootstrap for the responsive navbar and modals, little bit of styling in the HTML code. I have some awesome styling in my CSS where i went through and touched all the elements with styling. I inverted the colors on the navbar on mobile for a the top links which was tricky but I learned alot. Also integrated a sticky navbar container to host the Bootstrap navbar which kept popping out of the sticky container on mobile but I got it and I think its slick. I also added a little responsive menu icon in the navbar, pretty sweet. This will be an ongoing project as I continue to learn to code.. I've been studying for the last couple months. I am a remodeling contractor in the Northeast - so its a perfect time while its cold....BRRRR</p>
