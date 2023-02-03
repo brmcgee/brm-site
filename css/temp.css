@@ -448,28 +448,7 @@ input {
 
 /* ===== MASTHEAD ===============*/
 
-/* darker filter - new  */
-.masthead {
-    box-sizing: border-box;
-    width: 100vw;
-    height: 61vh;
-    color: #fff;
-    height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
-    background-size: cover;
-    position: relative;
-  }
-  /* dimmer  */
-  .masthead:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    inset: 0;
-  }
+
 
 /* lighter filter - old  */
 
@@ -492,12 +471,34 @@ input {
     right: 0px;
 } */
 
+/* darker filter - new  */
+
+/* sizing @ breakpoints */
+.masthead {
+    box-sizing: border-box;
+    width: 100vw;
+    color: #e2e2e2;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+  /* dimmer  */
+  .masthead:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    inset: 0;
+  }
 .masthead .masthead-container .block-text {
     width: 100%;
     height: 58px;
     background-color: var(--bg-primary);
     position: absolute;
-    top: 60vh;
+    top: 62vh;
     left: 0px;
     right: 0px;
     display: flex;
@@ -555,10 +556,11 @@ input {
 }
 @media (min-width: 125px) {
     .masthead {
-        height: 55vh;
+        height: 57vh;
+
     }
     .masthead .masthead-container .block-text {
-        top: 53vh;
+        top: 55vh;
     }
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;
@@ -569,7 +571,7 @@ input {
         text-transform: uppercase;
     }
     .masthead .masthead-container h2 {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 26px;
         text-transform: uppercase;
         padding-left: 3vw;
@@ -582,6 +584,7 @@ input {
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-family: "Roboto", Sans-serif;
+        padding-top: 10px;
     }
     .masthead .masthead-container .block-text p {
         font-size: 32px;
@@ -938,10 +941,17 @@ input {
   
   .footer .footer-content .footer-info p {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 22px;
     margin-bottom: 0;
     font-family: var(--font-primary);
     color: #fff;
+  }
+
+  .footer .footer-content .footer-info p span {
+    color: #c8be06;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 2px;
   }
   
   .footer .footer-content .social-links a {
@@ -1026,14 +1036,15 @@ input {
 /* =========== SIDEBAR ============ */
 
 .sidebar  {
-    /* border: 1px double rgb(255, 220, 220); */
+    border: 0px double rgb(30, 228, 37);
 }
 .sidebar .sidebar-card .sidebar-title h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 48px;
     font-weight: bold;
     line-height: 50px;
+    letter-spacing: 1.01px;
     background-color: rgba(181, 132, 35, 0.1);
     color: #252424;
     border-radius: 12px;
@@ -1044,16 +1055,17 @@ input {
     padding: 28px 10px 20px 10px;
     max-width: 350px;
     text-align: center;
+    text-shadow: 1px 1px 3px rgba(103, 32, 16, 0.8);
 }
 .sidebar .sidebar-card .sidebar-title h2 span {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 50px;
     letter-spacing: 1.3px;
     font-style: italic;
     color: rgb(163, 30, 30);
+    text-shadow: 1px 1px 3px rgb(63, 41, 41);
 }
-
 .sidebar .sidebar-card .sidebar-info p {
     /* background-color: aqua; */
     font-family: 'Special Elite', Arial, Helvetica, sans-serif;
@@ -1061,11 +1073,9 @@ input {
     letter-spacing: 1.03px;
     line-height: 38px;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
     padding: 32px 9px 40px 9px;
     text-align: center;
-
-
 }
 .sidebar .sidebar-card .sidebar-info .sidebar-img {
     margin-top: 8px;
@@ -1077,13 +1087,13 @@ input {
  /* =========== SIDEBAR ============ */
 
 .ad  {
-    /* border: 1px double rgb(255, 220, 220); */
+    border: 0px solid rgb(227, 13, 170);
 }
 .ad .ad-card .ad-title h2 {
     /* font-family: "Roboto", Sans-serif; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
     line-height: 60px;
     background-color: rgba(181, 132, 35, 0.1);
@@ -1096,6 +1106,7 @@ input {
     padding: 28px 10px 30px 10px;
     max-width: 350px;
     text-align: center;
+    text-shadow: 1px 1px 3px rgba(103, 32, 16, 0.8);
 }
 .ad .ad-card .ad-info p {
     /* background-color: aqua; */
@@ -1110,13 +1121,11 @@ input {
     text-align: center;
 }
 .ad .ad-card .ad-title h2 span {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 44px;
+    font-weight: 500;
     line-height: 50px;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    border-bottom: 3px solid rgba(129, 26, 26, .8);
     color: rgb(163, 30, 30);
+    text-shadow: 1px 1px 3px rgb(39, 27, 27);
 }
 .ad .ad-card .ad-img {
     padding-top: 20px;
