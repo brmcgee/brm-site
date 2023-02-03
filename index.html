@@ -17,6 +17,10 @@
 <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
+
 <!-- local style sheet  -->
 <link rel="stylesheet" href="css/temp.css">
 <link rel="stylesheet" href="css/grids.css">
@@ -44,7 +48,7 @@
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <img class="ms-2 rounded" src="assets/logo/brm-ico.png" alt="BRM">
+      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -120,9 +124,9 @@
         <img src="assets/gallery/siding-corner.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 mx-auto d-block" alt="BRM - Home" width="700" height="500" loading="lazy">
       </div>
     </div>
-    <div class="px-4 pt-0 my-0 text-center border-bottom">
-      <h1 class="display-5 text-red text-roboto text-uppercase bold">The incredible handyman</h1>
-      <div class="col-md-8 mx-auto">
+    <div class="main-content px-4 pt-0 my-0 text-center border-bottom">
+      <h1>The incredible handyman</h1>
+      <div class="main-content-info col-md-8 mx-auto">
         <p class="lead mb-4">Chances are if it's broke - we can fix it. Give us a call today 
           and one of our technicians will arrive and diagnose the problem. Provide insight 
           and a solution. With over 20 years in the construction industry BRM has you covered. 
@@ -140,33 +144,45 @@
 
   <!-- ============ SIDEBAR ============== -->
   <div class="sidebar">
-    <div class="h-100 p-5 bg-light border rounded-3 text-center">
-      <div>
-        <h2 class="h3 text-red text-roboto">BRM is total service - Licensed and Fully Insured</h2>
+    <div class="sidebar-card ">
+      <div class="sidebar-title">
+        <h2 class="">Call today  
+          <br><span>(724) 787-3758</span> 
+          <br>FREE Estimate</h2>
+
       </div>
-      <p class="lead text-dark py-3">With over 20 years experience solving home repair problems BRM has you covered. 
-        Chances are if it's broke, we can fix it. Give us a call 
-        today and one of our technicians will arrive and diagnose the problem. 
-        Provide insight and offer a solution. We are at your services. 
+      <div class="sidebar-info">
+        <p class="lead text-dark text-mont py-3">With over 20 years experience solving home repair problems BRM has you covered. 
+          Chances are if it's broke, we can fix it. Give us a call 
+          today and one of our technicians will arrive and diagnose the problem. 
+          Provide insight and offer a solution. We are at your services. 
         </p>
-         <div class="text-center">
-          <img src="assets/logo/sheild-handy.jpg" class="img-thumbnail" alt="Total Service by BRM" style="width:100px;">
-         </div>
+        <div class="sidebar-img text-center">
+          <img src="assets/logo/sheild-handy.jpg" class="" alt="Total Service by BRM" style="width:100px;">
+        </div>
+      </div>
+
     </div>
   </div>
   <!-- ========= SIDEBAR END/============= -->
 
   <!-- ============ AD =================== -->
   <div class="ad">
-    <div class="h-100 p-5 bg-dark rounded-3 text-center">
-      <h2 class="h3 text-white text-roboto">Quality home repair and maintainence </h2>
-      <p class="lead text-white py-3">Keeping up with a property is a lot of work - We can help. BRM can offer solutions
-         for all of your home or business repair and maintenance needs. From bathroom remodeling 
-         to putting in windows or putting up that beautiful deck you always wanted. BRM has you covered. 
-         We even offer hauling, clean up and debris removal. Connect today for a FREE estimate. </p>
-         <div class="text-center">
-          <img src="assets/logo/services.png" class="img-thumbnail" alt="Services by BRM" style="width:100px;">
-         </div>
+    <div class="ad-card ">
+      <div class="ad-img">
+        <img style="max-width:266px;" src="assets/logo/free-estimate.png" alt="Total Service by BRM">
+      </div>
+      <div class="ad-info">
+        <p class="lead text-dark text-mont py-3">With over 20 years experience solving home repair problems BRM has you covered. 
+          Chances are if it's broke, we can fix it. Give us a call 
+          today and one of our technicians will arrive and diagnose the problem. 
+          Provide insight and offer a solution. We are at your services. 
+        </p>
+      </div>
+      <div class="ad-title">
+        <h2 class="">Licensed and Fully Insured</h2>
+      </div>
+
     </div>
   </div>
   <!-- ========= AD END/ ================= -->
