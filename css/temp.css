@@ -43,6 +43,13 @@ body {
 .text-elite {
     font-family: 'Special Elite', cursive;
 }
+.img-box {
+    width: 220px;
+    padding: 30px 4px 32px 8px;
+    margin: 18px auto;
+    border: 3px solid rgb(192, 192, 192);
+    box-shadow: 7px 8px 32px 10px rgba(199, 199, 199, 0.4);
+}
 
 /* BUTTONS  */
 .btn-outline-red {
@@ -63,6 +70,39 @@ body {
     border: 3px solid rgba(163, 30, 30, 1);
     color: white;
 }
+
+/* beta button  */
+/* .btn-outline {
+    display: inline block;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    padding: 10px 38px;
+    border-radius: 5px;
+    color: #FFFFFF !important;
+    text-shadow: 2px 3px 4px #7D0000;
+    box-shadow: 1px 1px 1px #864843;
+    border: 2px double #690101;
+    background: #E31717;
+    background: linear-gradient(to top, #E31717, #aa1212);
+    transition: 0.2s;
+  }
+.btn-outline:hover {
+    color: #d3d3d3 !important;
+    background: #780101;
+    text-shadow: 5px 7px 8px #7D0000;
+    background: linear-gradient(to top, #7e0303, #A80707);
+    box-shadow: 1px 1px 2px #818181;
+    border: 2px double #690101;
+}
+.btn-outline:active {
+    border: 2px inset #0c0101;
+} */
+/* beta button  */
+
 .btn-outline {
     display: inline block;
     font-family: "Roboto", Sans-serif;
@@ -159,6 +199,8 @@ input {
      /* z-index: 99000; */
      /* background-color: #333; */
 }
+
+/* footer-bar exclusive for contact-brm.html  */
 .footer-bar {
     height: 46px;
     width: 100%;
@@ -167,17 +209,20 @@ input {
     bottom: 0px;
     z-index: 99999;
 }
-.footer-bar .footer-content h3 {
-    color: white;
-    font-size: 14px;
+.footer-bar .footer-info h3 {
+    color: rgb(222, 222, 7);
+    font-family: 'Special Elite', cursive;
+    font-size: 15px;
     padding-top: 5px;
+    padding-left: 2px;
 }
-.footer-bar .footer-content h4 {
+.footer-bar .footer-info h4 {
     color: rgb(222, 222, 7);
     font-family: 'Special Elite', cursive;
     letter-spacing: 1.1px;
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 5px;
+    padding-right: 4px;
 }
 .footer-bar .footer-info {
     display: flex;
@@ -185,6 +230,7 @@ input {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+/* footer-bar exclusive for contact-brm.html  */
 
 /* === BANNER STYLE =========  */
 .banner-bar {
@@ -661,6 +707,10 @@ input {
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(244, 239, 239);
+    background: #8F0303;
+    background: linear-gradient(to right, #8F0303 0%, #979696 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     /* width: 100vw; */
 }
  
@@ -753,9 +803,6 @@ input {
     }
     .connect-container .connect-heading p {
         text-align: left;
-    }
-    .connect-container .connect-heading img {
-        margin-left: 100px;
     }
     .connect-form {
         display: flex;
@@ -1035,7 +1082,7 @@ input {
 /* =========== SIDEBAR ============ */
 
 .sidebar  {
-    border: 0px double rgb(30, 228, 37);
+    margin-left: 5px;
 }
 .sidebar .sidebar-card .sidebar-title h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -1046,9 +1093,8 @@ input {
     letter-spacing: 1.01px;
     background-color: rgba(181, 132, 35, 0.1);
     color: #252424;
-    border-radius: 12px;
     box-shadow: 3px 8px 22px 4px rgba(86, 17, 17, 0.2);
-    border: .1px solid rgba(2, 2, 2, 0.2);
+    border: 4px solid rgba(15, 14, 9, 0.2);
     margin-top: 38px;
     margin: 38px auto 48px auto;
     padding: 28px 10px 20px 10px;
@@ -1068,11 +1114,11 @@ input {
 .sidebar .sidebar-card .sidebar-info p {
     /* background-color: aqua; */
     font-family: 'Special Elite', Arial, Helvetica, sans-serif;
-    color: #2d2b2b;
     letter-spacing: 1.03px;
+    color: #2d2b2b;
     line-height: 38px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     padding: 32px 9px 40px 9px;
     text-align: center;
 }
@@ -1087,7 +1133,7 @@ input {
  /* =============== AD ============ */
 
 .ad  {
-    border: 0px solid rgb(227, 13, 170);
+    margin-left: 5px;
 }
 .ad .ad-card .ad-title h2 {
     /* font-family: "Roboto", Sans-serif; */
@@ -1098,9 +1144,8 @@ input {
     line-height: 60px;
     background-color: rgba(181, 132, 35, 0.1);
     color: #040404;
-    border-radius: 12px;
     box-shadow: 3px 8px 22px 4px rgba(86, 17, 17, 0.2);
-    border: .1px solid rgba(2, 2, 2, 0.2);
+    border: 4px solid rgba(15, 14, 9, 0.2);
     margin-top: 38px;
     margin: 38px auto 48px auto;
     padding: 28px 10px 30px 10px;
@@ -1124,8 +1169,9 @@ input {
     font-size: 44px;
     font-weight: 500;
     line-height: 50px;
-    color: rgb(163, 30, 30);
+    color: rgb(143, 23, 23);
     text-shadow: 1px 1px 3px rgb(39, 27, 27);
+    text-transform: none;
 }
 .ad .ad-card .ad-img {
     padding-top: 20px;
@@ -1199,27 +1245,39 @@ input {
 .contact-container .contact-card .card-info {
     margin: 1px;
 } 
+.contact-container .contact-card .card-info .baseline {
+    display: flex;
+    align-items: center;
+}
 .contact-container .contact-card .card-info h3 {
-    font-size: 26px;
-    margin-left: 12px;
-    font-weight: 500;
+    font-size: 20px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    border-bottom: 0px solid rgb(139, 24, 24);
 }
 .contact-container .contact-card .card-info span {
     margin-right: 18px;
     margin-top: 8px;
 }
 .contact-container .contact-card .card-info span i {
-    font-size: 26px;
-    color: rgb(163, 30, 30);
+    font-size: 28px;
+    background-color: rgb(163,30,30);
+    border: 2px solid #000000;
+    box-shadow: 8px 8px 18px 2px rgb(210, 210, 210);
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    color:#ffffff;
 }
 .contact-container .contact-card .card-info p {
-    margin-left: 62px;
+    margin-left: 82px;
+    line-height: 1.25;
 }
 .contact-container .contact-card .card-info ul {
     list-style: none;
 }
 .contact-container .contact-card .card-info ul  li {
-    margin-left: 29px;
+    margin-left: 44px;
+    line-height: 1.25;
 }
 /* payments split  */
 .contact-container .contact-group {
@@ -1231,13 +1289,13 @@ input {
     align-items: center;
 }
 .contact-group .card-title {
-    max-width: 300px;
+    width: 280px;
     height: 150px;
 }
 .contact-group .card-img {
     width: 150px;
     height: 110px;
-    margin: 0 auto 3px auto;
+    padding: 5 auto 5 auto;
 }
 
 
@@ -1280,8 +1338,9 @@ input {
  }
 .modal-content .modal-body .schedule-message h5 {
     font-family: "Roboto", Sans-serif;
-    margin: 0 0 2px 0;
-    padding-bottom: 0px;
+    margin: 0 0 6px 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(192, 192, 192);
     font-size: 19px;
  }
 .modal-content .modal-body .schedule-message a {
@@ -1354,3 +1413,23 @@ h2#header_14.form-header {
     color: #fff;
 }
 /* ========= JOTFORM END/ ============  */
+
+
+
+.cube {
+    transform: scaleX(1) scaleY(0.8) scaleZ(1) rotateX(0deg) rotateY(-8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+}
+
+.rotate {
+    transition: .5s;
+}
+.rotate:hover {
+    transform: rotateX(-40deg);
+}
+
+.text-red-fx {
+    background: #8F0303;
+    background: linear-gradient(to right, #8F0303 0%, #C91412 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
